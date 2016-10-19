@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cyuaAje" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyuaAje" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cyuaAje" class="cyuaAje"></div>  
+  <div component="$model/UI2/system/components/justep/list/list" class="x-list cyuaAje" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;threads&quot;}" __cid="cyuaAje"> 
+    <ul class="x-list-template hide cyuaAje" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cyuaAje"> 
+      <li xid="li1" __cid="cyuaAje" class="cyuaAje">
+        <div class="media cyuaAje" xid="media_head" __cid="cyuaAje"> 
+          <div class="media-left cyuaAje" xid="mediaLeft1" __cid="cyuaAje"> 
+            <a href="#" xid="a1" __cid="cyuaAje" class="cyuaAje"> 
+              <img class="media-object cyuaAje" src="" alt="" xid="image1" __cid="cyuaAje"/>
+            </a> 
+          </div>  
+          <div class="media-body cyuaAje" xid="mediaBody1" __cid="cyuaAje"> 
+            <h4 class="media-heading cyuaAje" xid="h41" __cid="cyuaAje">Media heading</h4>
+          </div> 
+        </div>
+      </li>
+    </ul> 
+  </div>
+</div>

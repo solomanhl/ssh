@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cr6Fzqa" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cr6Fzqa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cr6Fzqa" class="cr6Fzqa"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcV7VZ3e-iosstatusbar cr6Fzqa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cr6Fzqa"> 
+    <div class="x-panel-content cr6Fzqa" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cr6Fzqa"> 
+      <div xid="div_subject" __cid="cr6Fzqa" class="cr6Fzqa"> 
+        <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cr6Fzqa" xid="textarea_subject" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;标题，4-25个字&quot;}" __cid="cr6Fzqa"/>
+      </div>  
+      <div xid="div_msg" __cid="cr6Fzqa" class="cr6Fzqa">
+        <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cr6Fzqa" xid="textarea_msg" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;内容，10-700个字&quot;}" __cid="cr6Fzqa"/>
+      </div>  
+      <div xid="div_send" __cid="cr6Fzqa" class="cr6Fzqa">
+        <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_pic" __cid="cr6Fzqa" class="cr6Fzqa"/>
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cr6Fzqa" xid="button_send" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button_sendClick" data-config="{&quot;label&quot;:&quot;发表&quot;}" __cid="cr6Fzqa"> 
+          <i xid="i1" __cid="cr6Fzqa" class="cr6Fzqa"/>  
+          <span xid="span1" __cid="cr6Fzqa" class="cr6Fzqa">发表</span>
+        </a> 
+      </div>  
+      <div xid="div_attach" __cid="cr6Fzqa" class="cr6Fzqa">
+        <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{ref:$model.attach.ref(&quot;Json&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;image/*&quot;,&quot;actionUrl&quot;:&quot;/baas/ssh/attachment/simpleFileStore&quot;}" __cid="cr6Fzqa" class="cr6Fzqa"> 
+          <div class="x-attachment cr6Fzqa" xid="div5" __cid="cr6Fzqa"> 
+            <div class="x-attachment-content x-card-border cr6Fzqa" xid="div6" __cid="cr6Fzqa"> 
+              <div class="x-doc-process cr6Fzqa" xid="div7" __cid="cr6Fzqa"> 
+                <div class="progress-bar x-doc-process-bar cr6Fzqa" role="progressbar" style="width:0%;" xid="progressBar1" __cid="cr6Fzqa"/>
+              </div>  
+              <div data-bind="foreach:$attachmentItems" xid="div8" __cid="cr6Fzqa" class="cr6Fzqa"> 
+                <div class="x-attachment-cell cr6Fzqa" xid="div9" __cid="cr6Fzqa"> 
+                  <div class="x-attachment-item x-item-other cr6Fzqa" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div10" __cid="cr6Fzqa"> 
+                    <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cr6Fzqa" xid="a1" __cid="cr6Fzqa"/>
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-attachment-cell cr6Fzqa" data-bind="visible:$state.get() == 'upload'" xid="div11" __cid="cr6Fzqa"> 
+                <div class="x-attachment-item x-item-upload cr6Fzqa" data-bind="visible:$state.get() == 'upload'" xid="div12" __cid="cr6Fzqa"/>
+              </div>  
+              <div class="x-attachment-cell cr6Fzqa" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div13" __cid="cr6Fzqa"> 
+                <div class="x-attachment-item x-item-remove cr6Fzqa" data-bind="click:changeState.bind($object,'remove')" xid="div14" __cid="cr6Fzqa"/>
+              </div>  
+              <div style="clear:both;" xid="div15" __cid="cr6Fzqa" class="cr6Fzqa"/>
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <style __cid="cr6Fzqa" class="cr6Fzqa">.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>

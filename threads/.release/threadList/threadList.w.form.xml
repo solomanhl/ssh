@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQFfEfq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQFfEfq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQFfEfq" class="cQFfEfq"></div>  
+  <div component="$model/UI2/system/components/justep/list/list" class="x-list cQFfEfq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;threads&quot;}" __cid="cQFfEfq"> 
+    <ul class="x-list-template hide cQFfEfq" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cQFfEfq"> 
+      <li xid="li1" bind-click="li1Click" __cid="cQFfEfq" class="cQFfEfq">
+        <div class="media cQFfEfq" xid="media_head" __cid="cQFfEfq"> 
+          <div class="media-left cQFfEfq" xid="mediaLeft1" __cid="cQFfEfq"> 
+            <a href="#" xid="a1" __cid="cQFfEfq" class="cQFfEfq"> 
+              <img class="media-object cQFfEfq" src="$model/UI2/ssh/img/user_pic.png" alt="" xid="image1" style="width:58px;height:59px;" __cid="cQFfEfq"/>
+            </a> 
+          </div>  
+          <div class="media-body cQFfEfq" xid="mediaBody1" __cid="cQFfEfq"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_uname" data-bind="component:{ref:ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_time" bind-text="$model.datelineToBeforeDay( val(&quot;create_date&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/>  
+            <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_view" __cid="cQFfEfq" class="cQFfEfq"/>
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_view" data-bind="component:{ref:ref(&quot;views&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_subject" data-bind="component:{ref:ref(&quot;subject&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_msg" data-bind="component:{ref:ref(&quot;message&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/>  
+        <div xid="div_img" __cid="cQFfEfq" class="cQFfEfq">
+          <img src="" alt="" xid="image3" bind-attr-src=" val(&quot;img1&quot;)" __cid="cQFfEfq" class="cQFfEfq"/>  
+          <img src="" alt="" xid="image4" bind-attr-src=" val(&quot;img2&quot;)" __cid="cQFfEfq" class="cQFfEfq"/>  
+          <img src="" alt="" xid="image5" bind-attr-src=" val(&quot;img3&quot;)" __cid="cQFfEfq" class="cQFfEfq"/>
+        </div>
+      </li>
+    </ul> 
+  </div>
+</div>

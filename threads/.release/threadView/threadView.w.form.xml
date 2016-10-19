@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cueA36j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cueA36j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cueA36j" class="cueA36j"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvEf6Ff-iosstatusbar cueA36j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cueA36j"> 
+    <div class="x-panel-content cueA36j" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueA36j">
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_subject" data-bind="component:{ref:$model.t_info.ref(&quot;subject&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+      <div xid="div_time_user" __cid="cueA36j" class="cueA36j">
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_time" bind-text="$model.datelineToDate( $model.t_info.val(&quot;create_date&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_uname" data-bind="component:{ref:$model.t_info.ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+      </div>  
+      <div xid="div_guanzhu" __cid="cueA36j" class="cueA36j">
+        <img src="$model/UI2/ssh/img/views.png" alt="" xid="image1" __cid="cueA36j" class="cueA36j"/>  
+        <label xid="label1" __cid="cueA36j" class="cueA36j">点蓝字关注我们哦</label>
+      </div>  
+      <div xid="div_msg" __cid="cueA36j" class="cueA36j">
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_msg" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+      </div>  
+      <div xid="div_zan" __cid="cueA36j" class="cueA36j">
+        <label xid="label_zan" __cid="cueA36j" class="cueA36j">这么好的文章，赶紧点赞↓分享↑呗~</label>
+        <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_zan" __cid="cueA36j" class="cueA36j"/>  
+        <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_sign" __cid="cueA36j" class="cueA36j"/> 
+      </div>  
+      <div xid="div_comments" __cid="cueA36j" class="cueA36j">
+        <img src="$model/UI2/ssh/img/views.png" alt="" xid="image4" __cid="cueA36j" class="cueA36j"/>  
+        <label xid="label3" __cid="cueA36j" class="cueA36j">全部评论</label>  
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cueA36j" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;post&quot;,&quot;filter&quot;:&quot; $row.val(\&quot;isfirst\&quot;) == 0&quot;}" __cid="cueA36j"> 
+          <ul class="x-list-template hide cueA36j" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cueA36j"> 
+            <li xid="li1" __cid="cueA36j" class="cueA36j">
+              <div class="media cueA36j" xid="media1" __cid="cueA36j"> 
+                <div class="media-left cueA36j" xid="mediaLeft1" __cid="cueA36j"> 
+                  <a href="#" xid="a1" __cid="cueA36j" class="cueA36j"> 
+                    <img class="media-object cueA36j" src="$model/UI2/ssh/img/user_pic.png" alt="" xid="image5" style="width:64px;height:63px;" __cid="cueA36j"/>
+                  </a> 
+                </div>  
+                <div class="media-body cueA36j" xid="mediaBody1" __cid="cueA36j"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_uname" data-bind="component:{ref:ref(&quot;uid&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_msg" bind-html=" $model.showMessage( val(&quot;message&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
+                  <div xid="div4" __cid="cueA36j" class="cueA36j">
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_time" bind-text=" $model.datelineToBeforeDay( val(&quot;create_date&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
+                    <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_ding" __cid="cueA36j" class="cueA36j"/>  
+                    <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_pinlun" __cid="cueA36j" class="cueA36j"/>  
+                    <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_genduo" __cid="cueA36j" class="cueA36j"/> 
+                  </div>
+                </div> 
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cueA36j" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueA36j">
+      <div xid="div5" __cid="cueA36j" class="cueA36j"> 
+        <div xid="div_pinlun" __cid="cueA36j" class="cueA36j">
+          <img src="$model/UI2/ssh/img/views.png" alt="" xid="image9" __cid="cueA36j" class="cueA36j"/>
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_pinlun" bind-text="1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+        </div>  
+        <div xid="div7" __cid="cueA36j" class="cueA36j">
+          <img src="$model/UI2/ssh/img/views.png" alt="" xid="image10" __cid="cueA36j" class="cueA36j"/>  
+          <label xid="label4" __cid="cueA36j" class="cueA36j">赞</label>
+        </div>  
+        <div xid="div_zhuanfa" __cid="cueA36j" class="cueA36j">
+          <img src="$model/UI2/ssh/img/views.png" alt="" xid="image11" __cid="cueA36j" class="cueA36j"/>  
+          <label xid="label_zhuanfa" __cid="cueA36j" class="cueA36j">转发</label>
+        </div>
+      </div>
+    </div>
+    <style __cid="cueA36j" class="cueA36j">.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>
