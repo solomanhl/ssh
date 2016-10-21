@@ -34,14 +34,17 @@
                   </a> 
                 </div>  
                 <div class="media-body cueA36j" xid="mediaBody1" __cid="cueA36j"> 
-                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_uname" data-bind="component:{ref:ref(&quot;uid&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_uname" data-bind="component:{ref:ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
                   <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_msg" bind-html=" $model.showMessage( val(&quot;message&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
+                  <div xid="div_quote" bind-visible=" val(&quot;quotepid&quot;) != 0" __cid="cueA36j" class="cueA36j">
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_quote" bind-visible=" val(&quot;quotepid&quot;) != 0" bind-html=" $model.getQuote( val(&quot;quotepid&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+                  </div>
                   <div xid="div4" __cid="cueA36j" class="cueA36j">
                     <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_time" bind-text=" $model.datelineToBeforeDay( val(&quot;create_date&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
-                    <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_ding" __cid="cueA36j" class="cueA36j"/>  
-                    <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_pinlun" __cid="cueA36j" class="cueA36j"/>  
+                    <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_ding" bind-click="image_dingClick" __cid="cueA36j" class="cueA36j"/>  
+                    <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_pinlun" bind-click="image_pinlunClick" __cid="cueA36j" class="cueA36j"/>  
                     <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_genduo" __cid="cueA36j" class="cueA36j"/> 
-                  </div>
+                  </div> 
                 </div> 
               </div>
             </li>
@@ -53,7 +56,7 @@
           <img src="$model/UI2/ssh/img/views.png" alt="" xid="image9" __cid="cueA36j" class="cueA36j"/>  
           <label xid="label2" __cid="cueA36j" class="cueA36j">回复楼主</label>
         </div>  
-        <div xid="div7" __cid="cueA36j" class="cueA36j">
+        <div xid="div7" bind-click="div7Click" __cid="cueA36j" class="cueA36j">
           <img src="$model/UI2/ssh/img/views.png" alt="" xid="image10" __cid="cueA36j" class="cueA36j"/>  
           <label xid="label4" __cid="cueA36j" class="cueA36j">赞</label>
         </div>  

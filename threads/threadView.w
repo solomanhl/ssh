@@ -19,7 +19,8 @@
   <column name="doctype" type="String" xid="xid15"></column>
   <column name="quotepid" type="String" xid="xid16"></column>
   <column name="message" type="String" xid="xid17"></column>
-  <column name="message_fmt" type="String" xid="xid19"></column></div></div> 
+  <column name="message_fmt" type="String" xid="xid19"></column>
+  <column label="作者或回复者名字" name="username" type="String" xid="xid20"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_subject" bind-ref='$model.t_info.ref("subject")'></div><div xid="div_time_user"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_time" bind-text='$model.datelineToDate( $model.t_info.val("create_date"))'></div><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_uname" bind-ref='$model.t_info.ref("username")'></div></div>
   <div xid="div_guanzhu"><img src="$UI/ssh/img/views.png" alt="" xid="image1"></img>
@@ -37,20 +38,21 @@
     <a href="#" xid="a1">
      <img class="media-object" src="$UI/ssh/img/user_pic.png" alt="" xid="image5" style="width:64px;height:63px;"></img></a> </div> 
    <div class="media-body" xid="mediaBody1">
-    <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_uname" bind-ref='ref("uid")'></div>
+    <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_uname" bind-ref='ref("username")'></div>
   <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_msg" bind-html=' $model.showMessage( val("message"))'></div>
-  <div xid="div4"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_time" bind-text=' $model.datelineToBeforeDay( val("create_date"))'></div>
-  <img src="$UI/ssh/img/views.png" alt="" xid="image_ding"></img>
-  <img src="$UI/ssh/img/views.png" alt="" xid="image_pinlun"></img>
+  <div xid="div_quote" bind-visible=' val("quotepid") != 0'><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_quote" bind-visible=' val("quotepid") != 0' bind-html=' $model.getQuote( val("quotepid"))'></div></div><div xid="div4"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_time" bind-text=' $model.datelineToBeforeDay( val("create_date"))'></div>
+  <img src="$UI/ssh/img/views.png" alt="" xid="image_ding" bind-click="image_dingClick"></img>
+  <img src="$UI/ssh/img/views.png" alt="" xid="image_pinlun" bind-click="image_pinlunClick"></img>
   <img src="$UI/ssh/img/views.png" alt="" xid="image_genduo"></img>
-  </div></div> </div></li></ul> </div></div><div xid="div_bottom">
+  </div>
+  </div> </div></li></ul> </div></div><div xid="div_bottom">
   
   
   
   
   <div xid="div_pinlun" bind-click="div_pinlunClick"><img src="$UI/ssh/img/views.png" alt="" xid="image9"></img>
   <label xid="label2"><![CDATA[回复楼主]]></label></div>
-  <div xid="div7"><img src="$UI/ssh/img/views.png" alt="" xid="image10"></img>
+  <div xid="div7" bind-click="div7Click"><img src="$UI/ssh/img/views.png" alt="" xid="image10"></img>
   <label xid="label4"><![CDATA[赞]]></label></div>
   <div xid="div_zhuanfa"><img src="$UI/ssh/img/views.png" alt="" xid="image11"></img>
   <label xid="label_zhuanfa"><![CDATA[转发]]></label></div></div></div>

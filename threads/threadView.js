@@ -14,6 +14,7 @@ define(function(require){
 		this.last_date;
 		this.fid;
 		this.views;
+		this.quotepid
 	};
 
 	Model.prototype.modelLoad = function(event){
@@ -153,12 +154,17 @@ define(function(require){
 	Model.prototype.div_pinlunClick = function(event){
 		this.comp("popOver_pinlun").show();
 		this.comp("textarea_pinlun").set({"placeHolder":"回复楼主..."});
+		alert("楼主");
 	};
 	
 	//回复
 	Model.prototype.button_submitClick = function(event){
+		alert("楼层");
 		var me = this;
 		var msg = this.comp("textarea_pinlun").val();
+		if (this.firstpid != this.quotepid){
+			this.quotepid = this.firstpid;
+		}
 		if(msg.length > 0){
 			//修改换行标识，段落前后加p
         	msg = "<p>" + msg;
@@ -172,7 +178,7 @@ define(function(require){
 				"async" : true,	//异步：true
 				"params" : {
 					"tid" : this.tid,
-					"quotepid": this.firstpid,//
+					"quotepid": this.quotepid,//
 					"message" : msg
 				},
 				"success" : function(data) {
@@ -181,6 +187,54 @@ define(function(require){
 			});
 		}
 	};
+	
+	//评论楼层
+	Model.prototype.image_pinlunClick = function(event){
+		var row = event.bindingContext.$object;//获得当前行
+		this.comp("popOver_pinlun").show();
+		this.comp("textarea_pinlun").set({"placeHolder":"回复"+ row.val("username") +"..."});
+		this.quotepid = row.val("pid");
+	};
+	
+	//赞楼主
+	Model.prototype.div7Click = function(event){
+		this.zan(this.firstpid);
+	};
+	//赞楼层
+	Model.prototype.image_dingClick = function(event){
+		var row = event.bindingContext.$object;//获得当前行
+		this.zan(row.val("pid"));
+	};
+	//赞
+	Model.prototype.zan = function(pid){
+		//baassend alt+/
+			justep.Baas.sendRequest({
+			"url" : "/ssh/baseinfo",
+			"action" : "zan",
+			"async" : true,	//异步：true
+			"params" : {
+				"pid" : pid
+			},
+			"success" : function(data) {
+				
+			}
+		});
+	}
+	
+	//得到引用消息
+	Model.prototype.getQuote = function(quotepid){
+		var data = this.comp("post");
+		var rows = data.find(['pid'], [quotepid], true, true, false, true);
+		if (rows.length > 0){
+			if (rows[0].val('isfirst')!=1){
+				return rows[0].val('username') + "  " + rows[0].val('message');
+			}else{
+				return "";
+			}
+		}else{
+			return "";
+		}
+	}
 	
 	return Model;
 });
