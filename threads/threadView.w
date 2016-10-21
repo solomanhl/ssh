@@ -43,14 +43,21 @@
   <img src="$UI/ssh/img/views.png" alt="" xid="image_ding"></img>
   <img src="$UI/ssh/img/views.png" alt="" xid="image_pinlun"></img>
   <img src="$UI/ssh/img/views.png" alt="" xid="image_genduo"></img>
-  </div></div> </div></li></ul> </div></div></div>
-   <div class="x-panel-bottom" xid="bottom1"><div xid="div5">
+  </div></div> </div></li></ul> </div></div><div xid="div_bottom">
   
   
   
   
-  <div xid="div_pinlun"><img src="$UI/ssh/img/views.png" alt="" xid="image9"></img><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_pinlun" bind-text="1"></div></div>
+  <div xid="div_pinlun" bind-click="div_pinlunClick"><img src="$UI/ssh/img/views.png" alt="" xid="image9"></img>
+  <label xid="label2"><![CDATA[回复楼主]]></label></div>
   <div xid="div7"><img src="$UI/ssh/img/views.png" alt="" xid="image10"></img>
   <label xid="label4"><![CDATA[赞]]></label></div>
   <div xid="div_zhuanfa"><img src="$UI/ssh/img/views.png" alt="" xid="image11"></img>
-  <label xid="label_zhuanfa"><![CDATA[转发]]></label></div></div></div></div></div>
+  <label xid="label_zhuanfa"><![CDATA[转发]]></label></div></div></div>
+   </div>
+  <div component="$UI/system/components/justep/popOver/popOver" class="x-popOver" direction="auto" xid="popOver_pinlun" anchor="div_bottom">
+   <div class="x-popOver-overlay" xid="div1"></div>
+   <div class="x-popOver-content" xid="div2"><textarea component="$UI/system/components/justep/textarea/textarea" class="form-control" xid="textarea_pinlun"></textarea>
+  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="提交" xid="button_submit" onClick="button_submitClick">
+   <i xid="i1"></i>
+   <span xid="span1">提交</span></a></div></div></div>

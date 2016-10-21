@@ -1,11 +1,14 @@
 define(function(require){
 require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/popOver/popOver');
 require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
 require('$model/UI2/system/components/justep/list/list');
 require('$model/UI2/system/components/justep/output/output');
 require('$model/UI2/system/components/justep/panel/child');
 require('$model/UI2/system/components/justep/data/data');
 require('$model/UI2/system/components/justep/window/window');
+require('$model/UI2/system/components/justep/textarea/textarea');
 require('$model/UI2/system/components/justep/panel/panel');
 var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
 var __parent0=require('$model/UI2/ssh/threads/threadView'); 

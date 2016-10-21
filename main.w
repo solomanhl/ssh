@@ -13,7 +13,7 @@
   </div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-content" xid="content1">
-  <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1">
+  <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1" onPullDown="scrollView1PullDown">
    <div class="x-content-center x-pull-down container" xid="div2">
     <i class="x-pull-down-img glyphicon x-icon-pull-down" xid="i1"></i>
     <span class="x-pull-down-label" xid="span1">下拉刷新...</span></div> 

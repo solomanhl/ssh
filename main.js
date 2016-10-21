@@ -54,5 +54,12 @@ define(function(require){
 		justep.Shell.showPage(url, params);
 	};
 
+
+	Model.prototype.scrollView1PullDown = function(event){
+		this.comp("windowContainer_topnews").refresh();
+		this.comp("windowContainer_threads").refresh();
+	};
+
+
 	return Model;
 });

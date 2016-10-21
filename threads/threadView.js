@@ -7,6 +7,7 @@ define(function(require){
 		this.callParent();
 		
 		this.tid;
+		this.firstpid;
 		this.username;
 		this.subject;
 		this.create_date;
@@ -24,12 +25,14 @@ define(function(require){
 		var me = this;
 //		var data_forum = event.params.data.data_forum;
 		this.tid = event.params.data.tid;
+		this.firstpid = event.params.data.firstpid;
 		this.username = event.params.data.username;
 		this.subject = event.params.data.subject;
 		this.create_date = event.params.data.create_date;
 		this.last_date = event.params.data.last_date;
 		this.fid = event.params.data.fid;
 		this.views = event.params.data.views;
+		
 		
 		var str = "[{\"tid\":" + this.tid + ","
 			+ "\"username\":\"" + this.username + "\","
@@ -45,6 +48,7 @@ define(function(require){
 		t_info.refreshData();
 		
 		this.getPost(this.tid);
+		this.addViews(this.tid);//查看数+1
 	};
 
 	Model.prototype.getPost = function(tid){
@@ -65,6 +69,21 @@ define(function(require){
 					var str = me.showMessage(post.getFirstRow().val("message"));//显示首贴正文
 					me.comp("output_msg").set({"value":str});
 				}
+			}
+		});
+	}
+	
+	Model.prototype.addViews = function(tid){
+		var me = this;
+		//baassend alt+/
+		justep.Baas.sendRequest({
+			"url" : "/ssh/baseinfo",
+			"action" : "addViews",
+			"async" : true,	//异步：true
+			"params" : {
+				"tid" : tid
+			},
+			"success" : function(data) {
 			}
 		});
 	}
@@ -128,6 +147,39 @@ define(function(require){
 		}
 		
 		return rtn;
+	};
+	
+	//打开回复楼主窗口
+	Model.prototype.div_pinlunClick = function(event){
+		this.comp("popOver_pinlun").show();
+		this.comp("textarea_pinlun").set({"placeHolder":"回复楼主..."});
+	};
+	
+	//回复
+	Model.prototype.button_submitClick = function(event){
+		var me = this;
+		var msg = this.comp("textarea_pinlun").val();
+		if(msg.length > 0){
+			//修改换行标识，段落前后加p
+        	msg = "<p>" + msg;
+//	        	message = message.replace(/\n/g, "</p><br/><p>");
+        	msg = msg.replace(/\n/g, "</p><p>");//p本身有换行效果
+        	msg = msg + "</p>";
+			//baassend alt+/
+			justep.Baas.sendRequest({
+				"url" : "/ssh/baseinfo",
+				"action" : "pinlun",
+				"async" : true,	//异步：true
+				"params" : {
+					"tid" : this.tid,
+					"quotepid": this.firstpid,//
+					"message" : msg
+				},
+				"success" : function(data) {
+					me.comp("popOver_pinlun").hide();
+				}
+			});
+		}
 	};
 	
 	return Model;

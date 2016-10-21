@@ -84,6 +84,7 @@ define(function(require){
 	        data : {
 	            // 将data中的一行数据传给对话框
 	            tid : current.val("tid"),
+	            firstpid : current.val("firstpid"),
 	            username : current.val("username"),
 	            subject : current.val("subject"),
 	            create_date : current.val("create_date"),

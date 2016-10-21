@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cueA36j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cueA36j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cueA36j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cueA36j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cueA36j" class="cueA36j"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvEf6Ff-iosstatusbar cueA36j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cueA36j"> 
     <div class="x-panel-content cueA36j" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueA36j">
@@ -48,12 +48,10 @@
           </ul> 
         </div>
       </div>
-    </div>  
-    <div class="x-panel-bottom cueA36j" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueA36j">
-      <div xid="div5" __cid="cueA36j" class="cueA36j"> 
-        <div xid="div_pinlun" __cid="cueA36j" class="cueA36j">
-          <img src="$model/UI2/ssh/img/views.png" alt="" xid="image9" __cid="cueA36j" class="cueA36j"/>
-          <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_pinlun" bind-text="1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+      <div xid="div_bottom" __cid="cueA36j" class="cueA36j"> 
+        <div xid="div_pinlun" bind-click="div_pinlunClick" __cid="cueA36j" class="cueA36j">
+          <img src="$model/UI2/ssh/img/views.png" alt="" xid="image9" __cid="cueA36j" class="cueA36j"/>  
+          <label xid="label2" __cid="cueA36j" class="cueA36j">回复楼主</label>
         </div>  
         <div xid="div7" __cid="cueA36j" class="cueA36j">
           <img src="$model/UI2/ssh/img/views.png" alt="" xid="image10" __cid="cueA36j" class="cueA36j"/>  
@@ -64,7 +62,17 @@
           <label xid="label_zhuanfa" __cid="cueA36j" class="cueA36j">转发</label>
         </div>
       </div>
-    </div>
+    </div>  
     <style __cid="cueA36j" class="cueA36j">.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cueA36j" xid="popOver_pinlun" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;div_bottom&quot;,&quot;direction&quot;:&quot;auto&quot;}" __cid="cueA36j"> 
+    <div class="x-popOver-overlay cueA36j" xid="div1" __cid="cueA36j"/>  
+    <div class="x-popOver-content cueA36j" xid="div2" __cid="cueA36j">
+      <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cueA36j" xid="textarea_pinlun" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cueA36j"/>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cueA36j" xid="button_submit" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button_submitClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cueA36j"> 
+        <i xid="i1" __cid="cueA36j" class="cueA36j"/>  
+        <span xid="span1" __cid="cueA36j" class="cueA36j">提交</span>
+      </a>
+    </div>
   </div>
 </div>
