@@ -35,7 +35,7 @@
   <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="更多" xid="button3">
    <i xid="i4"></i>
    <span xid="span5">更多</span></a>
-  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="相册" xid="button4">
+  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="相册" xid="button4" onClick="button4Click">
    <i xid="i5"></i>
    <span xid="span6">相册</span></a></div></div>
   

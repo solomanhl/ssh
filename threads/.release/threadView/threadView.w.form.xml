@@ -36,8 +36,8 @@
                 <div class="media-body cueA36j" xid="mediaBody1" __cid="cueA36j"> 
                   <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_uname" data-bind="component:{ref:ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
                   <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_msg" bind-html=" $model.showMessage( val(&quot;message&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  
-                  <div xid="div_quote" bind-visible=" val(&quot;quotepid&quot;) != 0" __cid="cueA36j" class="cueA36j">
-                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_quote" bind-visible=" val(&quot;quotepid&quot;) != 0" bind-html=" $model.getQuote( val(&quot;quotepid&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
+                  <div xid="div_quote" bind-visible="$model.getQuote( val(&quot;quotepid&quot;)) != &quot;hide&quot;" style="background-color:#C0C0C0;" __cid="cueA36j" class="cueA36j">
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_quote" bind-html=" $model.getQuote( val(&quot;quotepid&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
                   </div>
                   <div xid="div4" __cid="cueA36j" class="cueA36j">
                     <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_com_time" bind-text=" $model.datelineToBeforeDay( val(&quot;create_date&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>  

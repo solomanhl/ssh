@@ -40,7 +40,7 @@
    <div class="media-body" xid="mediaBody1">
     <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_uname" bind-ref='ref("username")'></div>
   <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_msg" bind-html=' $model.showMessage( val("message"))'></div>
-  <div xid="div_quote" bind-visible=' val("quotepid") != 0'><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_quote" bind-visible=' val("quotepid") != 0' bind-html=' $model.getQuote( val("quotepid"))'></div></div><div xid="div4"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_time" bind-text=' $model.datelineToBeforeDay( val("create_date"))'></div>
+  <div xid="div_quote" bind-visible='$model.getQuote( val("quotepid")) != "hide"' style="background-color:#C0C0C0;"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_quote" bind-html=' $model.getQuote( val("quotepid"))'></div></div><div xid="div4"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_com_time" bind-text=' $model.datelineToBeforeDay( val("create_date"))'></div>
   <img src="$UI/ssh/img/views.png" alt="" xid="image_ding" bind-click="image_dingClick"></img>
   <img src="$UI/ssh/img/views.png" alt="" xid="image_pinlun" bind-click="image_pinlunClick"></img>
   <img src="$UI/ssh/img/views.png" alt="" xid="image_genduo"></img>

@@ -221,6 +221,11 @@ define(function(require){
 		});
 	}
 	
+	//是否显示引用区域
+	Model.prototype.isShowQuote =  function (quotepid){
+	
+	}
+	
 	//得到引用消息
 	Model.prototype.getQuote = function(quotepid){
 		var data = this.comp("post");
@@ -229,10 +234,10 @@ define(function(require){
 			if (rows[0].val('isfirst')!=1){
 				return rows[0].val('username') + "  " + rows[0].val('message');
 			}else{
-				return "";
+				return "hide";
 			}
 		}else{
-			return "";
+			return "hide";
 		}
 	}
 	

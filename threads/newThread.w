@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="top:57px;left:242px;height:auto;"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="attach" idColumn="id"><column name="id" type="Integer" xid="xid1"></column>
+  <div component="$UI/system/components/justep/model/model" xid="model" style="top:57px;left:242px;height:auto;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="attach" idColumn="id"><column name="id" type="Integer" xid="xid1"></column>
   <column name="Json" type="String" xid="xid2"></column>
-  <data xid="default1">[{&quot;id&quot;:0,&quot;realFileName&quot;:&quot;view.png&quot;,&quot;storeFileName&quot;:&quot;view.png&quot;}]</data></div></div> 
+  <data xid="default1">[{&quot;id&quot;:0,&quot;realFileName&quot;:&quot;view.png&quot;,&quot;storeFileName&quot;:&quot;view.png&quot;}]</data></div>
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="forum" idColumn="fid"><column name="fid" type="Integer" xid="xid3"></column>
+  <column name="name" type="String" xid="xid4"></column>
+  <column label="版块介绍" name="col2" type="String" xid="xid5"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-content" xid="content1">
   
-  <div xid="div_subject">
+  <div xid="div_forum"><div component="$UI/system/components/justep/list/list" class="x-list" xid="list_forum" data="forum">
+   <ul class="x-list-template" xid="listTemplateUl1">
+    <li xid="li1" bind-click="li1Click"><label xid="label_forum" bind-text='ref("name")'><![CDATA[]]></label></li></ul> </div></div><div xid="div_subject">
   <textarea component="$UI/system/components/justep/textarea/textarea" class="form-control" xid="textarea_subject" placeHolder="标题，4-25个字"></textarea></div>
   <div xid="div_msg"><textarea component="$UI/system/components/justep/textarea/textarea" class="form-control" xid="textarea_msg" placeHolder="内容，10-700个字"></textarea></div>
   <div xid="div_send"><img src="$UI/ssh/img/views.png" alt="" xid="image_pic"></img><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="发表" xid="button_send" onClick="button_sendClick">
@@ -27,5 +32,6 @@
       <div class="x-attachment-item x-item-upload" data-bind="visible:$state.get() == 'upload'" xid="div12"></div></div> 
      <div class="x-attachment-cell" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div13">
       <div class="x-attachment-item x-item-remove" data-bind="click:changeState.bind($object,'remove')" xid="div14"></div></div> 
-     <div style="clear:both;" xid="div15"></div></div> </div> </div></div></div>
+     <div style="clear:both;" xid="div15"></div></div> </div> </div></div>
+  </div>
    </div></div>

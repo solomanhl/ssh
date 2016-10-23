@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQveEV3" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQveEV3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQveEV3" class="cQveEV3"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfiIVfm-iosstatusbar cQveEV3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQveEV3"> 
+    <div class="x-panel-content  x-scroll-view cQveEV3" xid="content1" _xid="C74599CDEBC00001E0E019481C12D8D0" style="top: 0px; bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQveEV3"> 
+      <div class="x-scroll cQveEV3" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cQveEV3"> 
+        <div class="x-content-center x-pull-down container cQveEV3" xid="div2" __cid="cQveEV3"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cQveEV3" xid="i1" __cid="cQveEV3"/>  
+          <span class="x-pull-down-label cQveEV3" xid="span1" __cid="cQveEV3">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cQveEV3" xid="div3" __cid="cQveEV3">
+          <div xid="div_new" __cid="cQveEV3" class="cQveEV3">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cQveEV3" xid="button_new" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button_newClick" data-config="{&quot;label&quot;:&quot;上传图片&quot;}" __cid="cQveEV3"> 
+              <i xid="i2" __cid="cQveEV3" class="cQveEV3"/>  
+              <span xid="span2" __cid="cQveEV3" class="cQveEV3">上传图片</span>
+            </a>
+          </div>
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cQveEV3" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data_album&quot;}" __cid="cQveEV3"> 
+            <ul class="x-list-template hide cQveEV3" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cQveEV3"> 
+              <li xid="li1" class="col-xs-6 cQveEV3" __cid="cQveEV3">
+                <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_new" bind-visible=" val(&quot;isNew&quot;)" __cid="cQveEV3" class="cQveEV3"/>
+                <img src="" alt="" xid="image_main" style="width:100%;" bind-attr-src=" $model.serverImg(val(&quot;filename&quot;))" __cid="cQveEV3" class="cQveEV3"/>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cQveEV3" xid="output_name" data-bind="component:{ref:ref(&quot;name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQveEV3"/>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cQveEV3" xid="output_pics" bind-text=" val(&quot;pics&quot;) + &quot;张&quot;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cQveEV3"/> 
+              </li>
+            </ul> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cQveEV3" class="cQveEV3">.x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfiIVfm-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>

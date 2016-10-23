@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cr6Fzqa" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cr6Fzqa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cr6Fzqa" class="cr6Fzqa"/>  
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cr6Fzqa" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cr6Fzqa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cr6Fzqa" class="cr6Fzqa"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcV7VZ3e-iosstatusbar cr6Fzqa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cr6Fzqa"> 
     <div class="x-panel-content cr6Fzqa" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cr6Fzqa"> 
+      <div xid="div_forum" __cid="cr6Fzqa" class="cr6Fzqa">
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cr6Fzqa" xid="list_forum" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;forum&quot;}" __cid="cr6Fzqa"> 
+          <ul class="x-list-template hide cr6Fzqa" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list_forum($element),afterRender:$model.foreach_afterRender_list_forum.bind($model,$element)}" __cid="cr6Fzqa"> 
+            <li xid="li1" bind-click="li1Click" __cid="cr6Fzqa" class="cr6Fzqa">
+              <label xid="label_forum" bind-text="ref(&quot;name&quot;)" __cid="cr6Fzqa" class="cr6Fzqa"/>
+            </li>
+          </ul> 
+        </div>
+      </div>
       <div xid="div_subject" __cid="cr6Fzqa" class="cr6Fzqa"> 
         <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cr6Fzqa" xid="textarea_subject" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;标题，4-25个字&quot;}" __cid="cr6Fzqa"/>
       </div>  
@@ -41,7 +50,7 @@
             </div> 
           </div> 
         </div>
-      </div>
+      </div> 
     </div>  
     <style __cid="cr6Fzqa" class="cr6Fzqa">.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcV7VZ3e-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
   </div>

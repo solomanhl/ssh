@@ -60,6 +60,18 @@ define(function(require){
 		this.comp("windowContainer_threads").refresh();
 	};
 
+	//相册
+	Model.prototype.button4Click = function(event){
+		var url = require.toUrl('./album/picList.w');
+		var params = {
+	        from : "main",
+	        data : {
+	        	//这里要传当前用户id
+	        }
+	    }
+		justep.Shell.showPage(url, params);
+	};
+
 
 	return Model;
 });

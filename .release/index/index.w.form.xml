@@ -20,7 +20,7 @@
                   <div class="media c6JRnEb" xid="media_head" __cid="c6JRnEb"> 
                     <div class="media-left c6JRnEb" xid="mediaLeft1" __cid="c6JRnEb"> 
                       <a href="#" xid="a1" __cid="c6JRnEb" class="c6JRnEb"> 
-                        <img class="media-object c6JRnEb" src="@justepContextPath@/v_8d44277cfaa343fbbcd2d517e53a9719l_zh_CNs_d_m/ssh/img/logo.png" alt="" xid="logo" style="width:64px;height:65px;" __cid="c6JRnEb"/> 
+                        <img class="media-object c6JRnEb" src="@justepContextPath@/v_ab3fdf0f07bd4e7dbe85d0f0a685b064l_zh_CNs_d_m/ssh/img/logo.png" alt="" xid="logo" style="width:64px;height:65px;" __cid="c6JRnEb"/> 
                       </a> 
                     </div>  
                     <div class="media-body c6JRnEb" xid="mediaBody1" __cid="c6JRnEb"> 
@@ -46,7 +46,7 @@
                         <i xid="i4" __cid="c6JRnEb" class="c6JRnEb"/>  
                         <span xid="span5" __cid="c6JRnEb" class="c6JRnEb">更多</span> 
                       </a>  
-                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c6JRnEb" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;相册&quot;}" __cid="c6JRnEb"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c6JRnEb" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;相册&quot;}" __cid="c6JRnEb"> 
                         <i xid="i5" __cid="c6JRnEb" class="c6JRnEb"/>  
                         <span xid="span6" __cid="c6JRnEb" class="c6JRnEb">相册</span> 
                       </a> 
@@ -65,7 +65,7 @@
                         <div component="$model/UI2/system/components/justep/list/list" class="x-list cZRR7j2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;threads&quot;,&quot;limit&quot;:4}" __cid="cZRR7j2"> 
                           <ul class="x-list-template hide cZRR7j2" xid="listTemplateUl1" __cid="cZRR7j2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
                             <li xid="li1" __cid="cZRR7j2" class="cZRR7j2" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
-                              <img src="@justepContextPath@/v_6e1ae96707a24f91a77ad7b85469f863l_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image1" __cid="cZRR7j2" class="cZRR7j2"/>  
+                              <img src="@justepContextPath@/v_4527457f8e114ba196c9e15435e0f476l_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image1" __cid="cZRR7j2" class="cZRR7j2"/>  
                               <div component="$model/UI2/system/components/justep/output/output" class="x-output cZRR7j2" xid="output1" data-bind="component:{ref:ref(&quot;subject&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZRR7j2"/> 
                             </li> 
                           </ul> 
@@ -83,13 +83,13 @@
                               <div class="media cQFfEfq" xid="media_head" __cid="cQFfEfq"> 
                                 <div class="media-left cQFfEfq" xid="mediaLeft1" __cid="cQFfEfq"> 
                                   <a href="#" xid="a1" __cid="cQFfEfq" class="cQFfEfq"> 
-                                    <img class="media-object cQFfEfq" src="@justepContextPath@/v_281afaa69baa449f93ad14b384a8e839l_zh_CNs_d_m/ssh/img/user_pic.png" alt="" xid="image1" style="width:58px;height:59px;" __cid="cQFfEfq"/> 
+                                    <img class="media-object cQFfEfq" src="@justepContextPath@/v_5c36fbee2ed54a289cb90a60e5345933l_zh_CNs_d_m/ssh/img/user_pic.png" alt="" xid="image1" style="width:58px;height:59px;" __cid="cQFfEfq"/> 
                                   </a> 
                                 </div>  
                                 <div class="media-body cQFfEfq" xid="mediaBody1" __cid="cQFfEfq"> 
                                   <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_uname" data-bind="component:{ref:ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/>  
                                   <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_time" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:$model.datelineToBeforeDay( val(&quot;create_date&quot;))" __cid="cQFfEfq"/>  
-                                  <img src="@justepContextPath@/v_f247ce64740243c9beb6da1d3d2ffabel_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image_view" __cid="cQFfEfq" class="cQFfEfq"/>  
+                                  <img src="@justepContextPath@/v_9dcc78290576427ca694700aececcc5cl_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image_view" __cid="cQFfEfq" class="cQFfEfq"/>  
                                   <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_view" data-bind="component:{ref:ref(&quot;views&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/> 
                                 </div> 
                               </div>  

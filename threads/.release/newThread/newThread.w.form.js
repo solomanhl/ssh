@@ -2,6 +2,7 @@ define(function(require){
 require('$model/UI2/system/components/justep/model/model');
 require('$model/UI2/system/components/justep/loadingBar/loadingBar');
 require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/list/list');
 require('$model/UI2/system/components/justep/panel/child');
 require('$model/UI2/system/components/justep/attachment/attachmentSimple');
 require('$model/UI2/system/components/justep/data/data');
@@ -19,5 +20,6 @@ var __result = __parent1._extend(__parent0).extend({
 	this._flag_='4b62183574b4426af4fab9cbcdcff074';
 	this.callParent(contextUrl);
  var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"Json":{"define":"Json","name":"Json","relation":"Json","type":"String"},"id":{"define":"id","name":"id","relation":"id","rules":{"integer":true},"type":"Integer"}},"directDelete":false,"events":{},"idColumn":"id","initData":"[{\"id\":0,\"realFileName\":\"view.png\",\"storeFileName\":\"view.png\"}]","limit":20,"xid":"attach"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"col2":{"define":"col2","label":"版块介绍","name":"col2","relation":"col2","type":"String"},"fid":{"define":"fid","name":"fid","relation":"fid","rules":{"integer":true},"type":"Integer"},"name":{"define":"name","name":"name","relation":"name","type":"String"}},"directDelete":false,"events":{},"idColumn":"fid","limit":20,"xid":"forum"});
 }}); 
 return __result;});
