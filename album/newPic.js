@@ -4,11 +4,19 @@ define(function(require){
 	
 	var Model = function(){
 		this.callParent();
-		this.aid = 1;
+		this.aid = 0;
+		this.shouldShowAlbumList = justep.Bind.observable(false);
 	};
 
 
 	Model.prototype.modelLoad = function(event){
+
+	};
+	
+	Model.prototype.modelParamsReceive = function(event){
+		var context = this.getContext();
+		this.aid = event.params.aid;
+
 		var data_album = this.comp("data_album");
 		justep.Baas.sendRequest({
 			"url" : "/ssh/album",
@@ -21,6 +29,12 @@ define(function(require){
 			"error" : function(data){
 			}
 		});
+			
+		if (this.aid==0){
+			this.shouldShowAlbumList.set(true);
+		}else{
+			this.shouldShowAlbumList.set(false);
+		}
 	};
 
 
@@ -65,6 +79,13 @@ define(function(require){
 				});
         	}
         	
+        }else{
+        	var s = "至少要有一张图片吧...";
+        	if ( justep.Browser.isX5App ){
+				window.plugins.toast.show(s, "long", "center");
+			}else{
+				 justep.Util.hint(s);
+			}
         }
         
 	};
@@ -75,7 +96,6 @@ define(function(require){
 		var row = event.bindingContext.$object;//获得当前行
 		this.aid = row.val("aid");
 	};
-
 
 	return Model;
 });

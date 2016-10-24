@@ -5,7 +5,8 @@
   <column name="name" type="String" xid="xid5"></column>
   <column label="显示图片" name="filename" type="String" xid="xid2"></column>
   <column label="是否有新" name="isNew" type="Boolean" xid="xid3"></column>
-  <column label="有多少图片" name="pics" type="Integer" xid="xid4"></column></div></div> 
+  <column label="有多少图片" name="pics" type="Integer" xid="xid4"></column>
+  <column name="views" type="Integer" xid="xid6"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-content  x-scroll-view" xid="content1" _xid="C74599CDEBC00001E0E019481C12D8D0" style="top: 0px; bottom: 0px;">
   <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1">
@@ -16,7 +17,7 @@
    <i xid="i2"></i>
    <span xid="span2">上传图片</span></a></div><div component="$UI/system/components/justep/list/list" class="x-list" xid="list1" data="data_album">
    <ul class="x-list-template" xid="listTemplateUl1">
-    <li xid="li1" class="col-xs-6"><img src="$UI/ssh/img/views.png" alt="" xid="image_new" bind-visible=' val("isNew")'></img><img src="" alt="" xid="image_main" style="width:100%;" bind-attr-src=' $model.serverImg(val("filename"))'></img>
+    <li xid="li1" class="col-xs-6" bind-click="li1Click"><img src="$UI/ssh/img/views.png" alt="" xid="image_new" bind-visible=' val("isNew")'></img><img src="" alt="" xid="image_main" bind-attr-src=' $model.serverImg(val("filename"))' class="img-responsive"></img>
   <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_name" bind-ref='ref("name")'></div>
   <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_pics" bind-text=' val("pics") + "张"'></div>
   </li></ul> </div>

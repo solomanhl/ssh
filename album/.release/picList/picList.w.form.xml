@@ -18,9 +18,9 @@
           </div>
           <div component="$model/UI2/system/components/justep/list/list" class="x-list cQveEV3" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data_album&quot;}" __cid="cQveEV3"> 
             <ul class="x-list-template hide cQveEV3" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cQveEV3"> 
-              <li xid="li1" class="col-xs-6 cQveEV3" __cid="cQveEV3">
+              <li xid="li1" class="col-xs-6 cQveEV3" bind-click="li1Click" __cid="cQveEV3">
                 <img src="$model/UI2/ssh/img/views.png" alt="" xid="image_new" bind-visible=" val(&quot;isNew&quot;)" __cid="cQveEV3" class="cQveEV3"/>
-                <img src="" alt="" xid="image_main" style="width:100%;" bind-attr-src=" $model.serverImg(val(&quot;filename&quot;))" __cid="cQveEV3" class="cQveEV3"/>  
+                <img src="" alt="" xid="image_main" bind-attr-src=" $model.serverImg(val(&quot;filename&quot;))" class="img-responsive cQveEV3" __cid="cQveEV3"/>  
                 <div component="$model/UI2/system/components/justep/output/output" class="x-output cQveEV3" xid="output_name" data-bind="component:{ref:ref(&quot;name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQveEV3"/>  
                 <div component="$model/UI2/system/components/justep/output/output" class="x-output cQveEV3" xid="output_pics" bind-text=" val(&quot;pics&quot;) + &quot;张&quot;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cQveEV3"/> 
               </li>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caiE3ma" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caiE3ma" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.tb-listBox.caiE3ma{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.caiE3ma div.caiE3ma{background-color: rgb(255, 255, 255)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="caiE3ma" class="caiE3ma"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcAvI3Mz-iosstatusbar caiE3ma" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caiE3ma"> 
+    <div class="x-panel-content  x-scroll-view  caiE3ma" xid="content1" _xid="C745D3362800000164D973001A4911F3" style="top: 0px; bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caiE3ma"> 
+      <div class="x-scroll caiE3ma" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="caiE3ma"> 
+        <div class="x-content-center x-pull-down container caiE3ma" xid="div1" __cid="caiE3ma"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down caiE3ma" xid="i1" __cid="caiE3ma"/>  
+          <span class="x-pull-down-label caiE3ma" xid="span1" __cid="caiE3ma">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content caiE3ma" xid="div2" __cid="caiE3ma">
+          <div xid="div_cover" __cid="caiE3ma" class="caiE3ma">
+            <img src="$model/UI2/ssh/img/album.jpg" alt="" xid="image_cover" style="width:100%;" __cid="caiE3ma" class="caiE3ma"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output caiE3ma" xid="output_name" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="caiE3ma"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output caiE3ma" xid="output_views" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="caiE3ma"/>
+          </div>  
+          <div xid="div_new" __cid="caiE3ma" class="caiE3ma">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caiE3ma" xid="button_new" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button_newClick" data-config="{&quot;label&quot;:&quot;上传图片&quot;}" __cid="caiE3ma"> 
+              <i xid="i2" __cid="caiE3ma" class="caiE3ma"/>  
+              <span xid="span2" __cid="caiE3ma" class="caiE3ma">上传图片</span>
+            </a>
+          </div>
+          <div xid="div_pics" __cid="caiE3ma" class="caiE3ma"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list caiE3ma" xid="list_date" dataItemAlias="data_dateRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data_date&quot;}" __cid="caiE3ma"> 
+              <ul class="x-list-template hide caiE3ma" xid="listTemplateUl_date" bind-foreach="{data:$model.foreach_list_date($element),afterRender:$model.foreach_afterRender_list_date.bind($model,$element),as:'data_dateRow'}" __cid="caiE3ma"> 
+                <li xid="li_date" __cid="caiE3ma" class="caiE3ma">
+                  <h5 xid="h51" class="text-muted caiE3ma" bind-text="$model.bindDate(  val(&quot;create_date&quot;))" __cid="caiE3ma"/>
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list clearfix caiE3ma" xid="list_pic" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data_thread&quot;,&quot;filter&quot;:&quot;$row.val(\&quot;create_date\&quot;)==data_dateRow.val(\&quot;create_date\&quot;)&quot;}" __cid="caiE3ma"> 
+                    <ul class="x-list-template hide caiE3ma" xid="listTemplateUl_pic" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl1" bind-foreach="{data:$model.foreach_list_pic($element),afterRender:$model.foreach_afterRender_list_pic.bind($model,$element)}" __cid="caiE3ma"> 
+                      <li xid="li2" class="col-xs-4 tb-listBox caiE3ma" __cid="caiE3ma"> 
+                        <div xid="div5" __cid="caiE3ma" class="caiE3ma"> 
+                          <img src="" alt="" xid="image2" bind-attr-src="$model.imgUrl(val(&quot;filename&quot;))" class="img-responsive caiE3ma" __cid="caiE3ma"/>
+                        </div> 
+                      </li>
+                    </ul> 
+                  </div> 
+                </li>
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <style __cid="caiE3ma" class="caiE3ma">.x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAvI3Mz-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>

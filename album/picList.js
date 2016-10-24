@@ -11,9 +11,7 @@ define(function(require){
 		var url = require.toUrl('./newPic.w');
 		var params = {
 	        from : "picList",
-	        data : {
-	        	"aid":0
-	        }
+	        aid:0
 	    }
 		justep.Shell.showPage(url, params);
 	};
@@ -37,6 +35,20 @@ define(function(require){
 			"error" : function(data){
 			}
 		});
+	};
+	
+	//点击相册
+	Model.prototype.li1Click = function(event){
+		var row = event.bindingContext.$object;//获得当前行
+		var url = require.toUrl('./picView.w');
+		var params = {
+	        from : "picList",
+	        aid : row.val("aid"),
+	        name : row.val("name"),
+	        cover : row.val("cover"),
+	        views : row.val("views")
+	    }
+		justep.Shell.showPage(url, params);
 	};
 	return Model;
 });
