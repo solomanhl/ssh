@@ -29,7 +29,7 @@
                   <h5 xid="h51" class="text-muted caiE3ma" bind-text="$model.bindDate(  val(&quot;create_date&quot;))" __cid="caiE3ma"/>
                   <div component="$model/UI2/system/components/justep/list/list" class="x-list clearfix caiE3ma" xid="list_pic" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data_thread&quot;,&quot;filter&quot;:&quot;$row.val(\&quot;create_date\&quot;)==data_dateRow.val(\&quot;create_date\&quot;)&quot;}" __cid="caiE3ma"> 
                     <ul class="x-list-template hide caiE3ma" xid="listTemplateUl_pic" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl1" bind-foreach="{data:$model.foreach_list_pic($element),afterRender:$model.foreach_afterRender_list_pic.bind($model,$element)}" __cid="caiE3ma"> 
-                      <li xid="li2" class="col-xs-4 tb-listBox caiE3ma" __cid="caiE3ma"> 
+                      <li xid="li2" class="col-xs-4 tb-listBox caiE3ma" bind-click="li2Click" __cid="caiE3ma"> 
                         <div xid="div5" __cid="caiE3ma" class="caiE3ma"> 
                           <img src="" alt="" xid="image2" bind-attr-src="$model.imgUrl(val(&quot;filename&quot;))" class="img-responsive caiE3ma" __cid="caiE3ma"/>
                         </div> 

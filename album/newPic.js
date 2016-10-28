@@ -5,6 +5,7 @@ define(function(require){
 	var Model = function(){
 		this.callParent();
 		this.aid = 0;
+		this.uid = 0;
 		this.shouldShowAlbumList = justep.Bind.observable(false);
 	};
 
@@ -16,6 +17,7 @@ define(function(require){
 	Model.prototype.modelParamsReceive = function(event){
 		var context = this.getContext();
 		this.aid = event.params.aid;
+		this.uid = event.params.uid;
 
 		var data_album = this.comp("data_album");
 		justep.Baas.sendRequest({
@@ -69,6 +71,7 @@ define(function(require){
 					"async" : true,
 					"params" : {
 						aid: this.aid,
+						uid : this.uid,
 						subject: subject,
 						ownerID: ownerID,
 						imgs: jsonObj,

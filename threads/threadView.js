@@ -6,15 +6,16 @@ define(function(require){
 	var Model = function(){
 		this.callParent();
 		
+		this.uid = 0;//本机用户id
 		this.tid;
 		this.firstpid;
-		this.username;
+		this.username;//主题作者用户名
 		this.subject;
 		this.create_date;
 		this.last_date;
 		this.fid;
 		this.views;
-		this.quotepid
+		this.quotepid;
 	};
 
 	Model.prototype.modelLoad = function(event){
@@ -24,6 +25,7 @@ define(function(require){
 	Model.prototype.modelParamsReceive = function(event){
 		var context = this.getContext();
 		var me = this;
+		this.uid = event.params.uid;
 //		var data_forum = event.params.data.data_forum;
 		this.tid = event.params.data.tid;
 		this.firstpid = event.params.data.firstpid;
@@ -154,12 +156,12 @@ define(function(require){
 	Model.prototype.div_pinlunClick = function(event){
 		this.comp("popOver_pinlun").show();
 		this.comp("textarea_pinlun").set({"placeHolder":"回复楼主..."});
-		alert("楼主");
+//		alert("楼主");
 	};
 	
 	//回复
 	Model.prototype.button_submitClick = function(event){
-		alert("楼层");
+//		alert("楼层");
 		var me = this;
 		var msg = this.comp("textarea_pinlun").val();
 		if (this.firstpid != this.quotepid){
@@ -177,6 +179,7 @@ define(function(require){
 				"action" : "pinlun",
 				"async" : true,	//异步：true
 				"params" : {
+					"uid" : this.uid,//本机用户id
 					"tid" : this.tid,
 					"quotepid": this.quotepid,//
 					"message" : msg

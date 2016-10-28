@@ -4,10 +4,13 @@ define(function(require){
 	
 	var Model = function(){
 		this.callParent();
+		this.uid = 0;
 	};
 
 	Model.prototype.modelLoad = function(event){
 		var me = this;
+		this.uid = this.getParent().uid;
+//		alert(this.getParent().uid);
 		//帖子列表
 		var threadsData = this.comp("threads");
 		justep.Baas.sendRequest({
@@ -81,11 +84,12 @@ define(function(require){
 		var url = require.toUrl('./threadView.w');
 		var params = {
 	        from : "threadList",
+	        uid : this.uid,//本机用户的id
 	        data : {
 	            // 将data中的一行数据传给对话框
 	            tid : current.val("tid"),
 	            firstpid : current.val("firstpid"),
-	            username : current.val("username"),
+	            username : current.val("username"),//主题作者的用户名
 	            subject : current.val("subject"),
 	            create_date : current.val("create_date"),
 	            last_date : current.val("last_date"),

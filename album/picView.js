@@ -6,6 +6,7 @@ define(function(require){
 	var Model = function(){
 		this.callParent();
 		this.aid = 0;
+		this.uid = 0;
 		this.name = ""
 		this.views = 0;
 	};
@@ -13,6 +14,7 @@ define(function(require){
 	Model.prototype.modelParamsReceive = function(event){
 		var context = this.getContext();
 		this.aid = event.params.aid;
+		this.uid = event.params.uid;
 		this.name = event.params.name;
 		this.cover = event.params.cover;
 		this.views = event.params.views;
@@ -88,7 +90,24 @@ define(function(require){
 		var url = require.toUrl('./newPic.w');
 		var params = {
 	        from : "picView",
-	        aid:this.aid
+	        aid:this.aid,
+	        uid : this.uid
+	    }
+		justep.Shell.showPage(url, params);
+	};
+	
+	//点图片放大显示，可以评论
+	Model.prototype.li2Click = function(event){
+		var row = event.bindingContext.$object;//获得当前行
+		var url = require.toUrl('./picDetailView.w');
+		var params = {
+	        from : "picView",
+	        uid : this.uid,
+	        aid : this.aid,
+	        name : this.name,//相册名字，大一班
+	        tid : row.val("tid"),
+	        filename : row.val("filename"),//图片路径
+	        create_date : row.val("create_date")//相片上传时间/
 	    }
 		justep.Shell.showPage(url, params);
 	};

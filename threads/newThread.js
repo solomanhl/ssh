@@ -6,6 +6,7 @@ define(function(require){
 	var Model = function(){
 		this.callParent();
 		this.fid = 0;
+		this.uid = 0;
 	};
 
 	Model.prototype.button_sendClick = function(event){
@@ -65,7 +66,7 @@ define(function(require){
 						"action" : "newThread",
 						"async" : true,
 						"params" : {
-			//				userid: userid,
+							uid: this.uid,
 							fid:this.fid,
 							subject: subject,
 							message: message,
@@ -102,6 +103,11 @@ define(function(require){
 				me.comp("forum").loadData(data, false);
 			}
 		});
+	};
+
+	Model.prototype.modelParamsReceive = function(event){
+		var context = this.getContext();
+		this.uid = event.params.uid;
 	};
 
 	return Model;

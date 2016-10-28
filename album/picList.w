@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="top:142px;left:91px;height:auto;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="data_album" idColumn="aid" limit="-1"><column label="相册id" name="aid" type="Integer" xid="xid1"></column>
+  <div component="$UI/system/components/justep/model/model" xid="model" style="top:142px;left:91px;height:auto;" onLoad="modelLoad" onParamsReceive="modelParamsReceive"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="data_album" idColumn="aid" limit="-1"><column label="相册id" name="aid" type="Integer" xid="xid1"></column>
   <column name="name" type="String" xid="xid5"></column>
   <column label="显示图片" name="filename" type="String" xid="xid2"></column>
   <column label="是否有新" name="isNew" type="Boolean" xid="xid3"></column>

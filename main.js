@@ -4,6 +4,9 @@ define(function(require){
 	
 	var Model = function(){
 		this.callParent();
+		
+		this.uid = 0; 
+		this.username = "admin";//临时
 	};
 
 	Model.prototype.modelLoad = function(event){
@@ -14,13 +17,14 @@ define(function(require){
 			"action" : "getUser",
 			"async" : true,	//异步：true
 			"params" : {
-				"username" : "admin"
+				"username" : this.username
 			},
 			"success" : function(data) {
 				if (data != undefined){
 					var user = me.comp("user");
 					user.loadData(data, false);
 					user.first();
+					me.uid = user.val("uid");
 				}
 			}
 		});
@@ -47,6 +51,7 @@ define(function(require){
 		var url = require.toUrl('./threads/newThread.w');
 		var params = {
 	        from : "main",
+	        uid : this.uid,
 	        data : {
 	        	//这里要传当前用户id
 	        }
@@ -65,6 +70,7 @@ define(function(require){
 		var url = require.toUrl('./album/picList.w');
 		var params = {
 	        from : "main",
+	        uid : this.uid,
 	        data : {
 	        	//这里要传当前用户id
 	        }

@@ -5,12 +5,14 @@ define(function(require){
 	
 	var Model = function(){
 		this.callParent();
+		this.uid = 0;
 	};
 
 	Model.prototype.button_newClick = function(event){
 		var url = require.toUrl('./newPic.w');
 		var params = {
 	        from : "picList",
+	        uid : this.uid,
 	        aid:0
 	    }
 		justep.Shell.showPage(url, params);
@@ -43,6 +45,7 @@ define(function(require){
 		var url = require.toUrl('./picView.w');
 		var params = {
 	        from : "picList",
+	        uid : this.uid,
 	        aid : row.val("aid"),
 	        name : row.val("name"),
 	        cover : row.val("cover"),
@@ -50,5 +53,11 @@ define(function(require){
 	    }
 		justep.Shell.showPage(url, params);
 	};
+	
+	Model.prototype.modelParamsReceive = function(event){
+		var context = this.getContext();
+		this.uid = event.params.uid;
+	};
+	
 	return Model;
 });

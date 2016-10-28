@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="top:57px;left:242px;height:auto;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="attach" idColumn="id"><column name="id" type="Integer" xid="xid1"></column>
+  <div component="$UI/system/components/justep/model/model" xid="model" style="top:57px;left:242px;height:auto;" onLoad="modelLoad" onParamsReceive="modelParamsReceive"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="attach" idColumn="id"><column name="id" type="Integer" xid="xid1"></column>
   <column name="Json" type="String" xid="xid2"></column>
   <data xid="default1">[{&quot;id&quot;:0,&quot;realFileName&quot;:&quot;view.png&quot;,&quot;storeFileName&quot;:&quot;view.png&quot;}]</data></div>
   <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="forum" idColumn="fid"><column name="fid" type="Integer" xid="xid3"></column>
