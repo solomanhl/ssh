@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" onParamsReceive="modelParamsReceive" style="top:9px;left:142px;height:auto;"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="data_thread" idColumn="tid" limit="-1" isTree="false"><column name="tid" type="Integer" xid="xid1"></column>
+  <div component="$UI/system/components/justep/model/model" xid="model" onParamsReceive="modelParamsReceive" style="top:9px;left:142px;height:auto;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="data_thread" idColumn="tid" limit="-1" isTree="false"><column name="tid" type="Integer" xid="xid1"></column>
   <column name="subject" type="String" xid="xid2"></column>
   <column name="create_date" type="String" xid="xid3"></column>
   <column name="last_date" type="String" xid="xid4"></column>

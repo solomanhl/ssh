@@ -9,6 +9,7 @@ define(function(require){
 		this.uid = 0;
 	};
 
+	
 	Model.prototype.button_sendClick = function(event){
 		var me = this;
 		
@@ -91,6 +92,14 @@ define(function(require){
 	};
 
 	Model.prototype.modelLoad = function(event){
+		//监听返回键
+ 		document.addEventListener('backbutton', function(){
+ 			justep.Shell.closePage();
+ 		}, false);
+ 		$(window).on('beforeunload', function(){
+ 			document.removeEventListener('backbutton', listener, false);
+ 	    });
+ 	    
 		var me = this;
 		//版块列表
 		justep.Baas.sendRequest({

@@ -2,6 +2,7 @@ define(function(require){
 	var $ = require("jquery");
 	var justep = require("$UI/system/lib/justep");
 	var g = require("../golbal_js");
+	require("cordova!cordova-plugin-x-toast");
 	
 	var Model = function(){
 		this.callParent();
@@ -13,6 +14,7 @@ define(function(require){
 		this.filename = "";//图片路径
 		this.create_date = "";//相片上传时间
 	};
+	
 
 	Model.prototype.modelParamsReceive = function(event){
 		var context = this.getContext();
@@ -29,6 +31,7 @@ define(function(require){
 		this.comp("output_date").set({"value" : this.create_date});
 		
 		this.getPosts(this.tid, false);
+		this.viewAlbumPic(this.tid);
 	};
 	
 	Model.prototype.imgUrl = function(img){
@@ -51,6 +54,63 @@ define(function(require){
 			}
 		});
 	}
+	
+	Model.prototype.viewAlbumPic = function(tid, isApend){
+		justep.Baas.sendRequest({
+			"url" : "/ssh/album",
+			"action" : "viewAlbumPic",
+			"async" : true,
+			"params" : {
+				"tid" : this.tid
+			},
+			"success" : function(data) {
+//				alert(data_thread.count());
+			}
+		});
+	}
+
+	//发送评论
+	Model.prototype.button_sendClick = function(event){
+		var input1 = this.comp("input1");
+		var msg = input1.val();
+		if (msg!=null && msg!="" && msg!=undefined){
+			justep.Baas.sendRequest({
+				"url" : "/ssh/album",
+				"action" : "postAlbumPic",
+				"async" : true,
+				"params" : {
+					"uid" : this.uid,
+					"tid" : this.tid,
+					"msg" : msg
+				},
+				"success" : function(data) {
+	//				alert(data_thread.count());
+					input1.val("");
+					var s = "回复成功！";
+		        	if ( justep.Browser.isX5App ){
+						window.plugins.toast.show(s, "long", "center");
+					}else{
+						 justep.Util.hint(s);
+					}
+				}
+			});
+		}
+
+	};
+
+	Model.prototype.backBtnClick = function(event){
+		justep.Shell.closePage();
+	};
+
+	Model.prototype.modelLoad = function(event){
+		//监听返回键
+ 		document.addEventListener('backbutton', function(){
+ 			justep.Shell.closePage();
+ 		}, false);
+ 		$(window).on('beforeunload', function(){
+ 			document.removeEventListener('backbutton', listener, false);
+ 	    });
+	};
 
 	return Model;
 });
