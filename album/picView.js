@@ -9,6 +9,7 @@ define(function(require){
 		this.uid = 0;
 		this.name = ""
 		this.views = 0;
+		this.pics = 0;
 	};
 	
 	Model.prototype.modelParamsReceive = function(event){
@@ -18,9 +19,10 @@ define(function(require){
 		this.name = event.params.name;
 		this.cover = event.params.cover;
 		this.views = event.params.views;
+		this.pics = event.params.pics;
 		
 		this.comp("output_name").set({"value":this.name});
-		this.comp("output_views").set({"value":"浏览量 " + this.views});
+		this.comp("output_views").set({"value":"共" +this.pics + "张照片，浏览量 " + this.views});
 		
 		this.viewAlbum();
 		this.getAlbumDate();
@@ -105,6 +107,8 @@ define(function(require){
 	        uid : this.uid,
 	        aid : this.aid,
 	        name : this.name,//相册名字，大一班
+	        pics : this.pics,//相册照片总数
+	        position : row.index() + 1,//第几个图片，index从0开始，需要+1
 	        tid : row.val("tid"),
 	        filename : row.val("filename"),//图片路径
 	        create_date : row.val("create_date")//相片上传时间/

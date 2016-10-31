@@ -57,7 +57,8 @@ define(function(require){
 	        aid : row.val("aid"),
 	        name : row.val("name"),
 	        cover : row.val("cover"),
-	        views : row.val("views")
+	        views : row.val("views"),
+	        pics : row.val("pics")
 	    }
 		justep.Shell.showPage(url, params);
 	};

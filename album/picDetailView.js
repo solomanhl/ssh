@@ -10,6 +10,8 @@ define(function(require){
 		this.uid = 0;
 		this.aid = 0;//相册
 		this.name = "";//相册名，大一班
+		this.pics = 0; //相片总数
+		this.position = 0;//第几幅照片
 		this.tid = 0;//相片id
 		this.filename = "";//图片路径
 		this.create_date = "";//相片上传时间
@@ -22,11 +24,13 @@ define(function(require){
 		this.uid = event.params.uid;
 		this.name = event.params.name;
 		this.tid = event.params.tid;
+		this.pics = event.params.pics;
+		this.position = event.params.position;
 		this.filename = event.params.filename;
 		this.create_date = event.params.create_date;
 		
 		this.comp("output_name").set({"value" : this.name});
-		this.comp("output_count").set({"value" : "0/0"});
+		this.comp("output_count").set({"value" : this.position + "/" + this.pics});
 		$(this.getElementByXid("image1")).attr("src", this.imgUrl(this.filename));
 		this.comp("output_date").set({"value" : this.create_date});
 		
