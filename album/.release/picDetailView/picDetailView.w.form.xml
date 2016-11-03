@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cqqyEbm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqqyEbm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cqqyEbm" class="cqqyEbm"/>  
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cqqyEbm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqqyEbm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cqqyEbm" class="cqqyEbm"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNjAVJf-iosstatusbar cqqyEbm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqyEbm"> 
     <div class="x-panel-top cqqyEbm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqqyEbm">
       <div xid="div_top" __cid="cqqyEbm" class="cqqyEbm">
@@ -19,7 +19,25 @@
       <div class="x-scroll cqqyEbm" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cqqyEbm"> 
         <div class="x-scroll-content cqqyEbm" xid="div14" __cid="cqqyEbm">
           <div xid="div_pic" __cid="cqqyEbm" class="cqqyEbm">
-            <img src="" alt="" xid="image1" __cid="cqqyEbm" class="cqqyEbm"/>
+            <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-card pcNj2IBb-iosstatusbar cqqyEbm" xid="panel_pic" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqyEbm"> 
+              <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel cqqyEbm" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cqqyEbm"> 
+                <ol class="carousel-indicators cqqyEbm" xid="ol1" bind-visible="false" __cid="cqqyEbm"/>  
+                <div class="x-contents carousel-inner cqqyEbm" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contentsImg" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChanged:contentsImgActiveChanged" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cqqyEbm"> 
+                  <div class="x-contents-content active cqqyEbm" xid="contentImg" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqqyEbm">
+                    <img src="" alt="" xid="image1" style="width:100%;" __cid="cqqyEbm" class="cqqyEbm"/>
+                  </div>
+                </div>  
+                <a class="left carousel-control cqqyEbm" role="button" xid="a1" bind-visible="false" __cid="cqqyEbm"> 
+                  <span class="glyphicon glyphicon-chevron-left cqqyEbm" aria-hidden="true" xid="span2" __cid="cqqyEbm"/>  
+                  <span class="sr-only cqqyEbm" xid="span4" __cid="cqqyEbm">Previous</span>
+                </a>  
+                <a class="right carousel-control cqqyEbm" role="button" xid="a2" bind-visible="false" __cid="cqqyEbm"> 
+                  <span class="glyphicon glyphicon-chevron-right cqqyEbm" aria-hidden="true" xid="span5" __cid="cqqyEbm"/>  
+                  <span class="sr-only cqqyEbm" xid="span6" __cid="cqqyEbm">Next</span>
+                </a> 
+              </div>
+              <style __cid="cqqyEbm" class="cqqyEbm">.x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNj2IBb-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+            </div>
           </div>
           <div xid="div_subject" __cid="cqqyEbm" class="cqqyEbm">
             <div component="$model/UI2/system/components/justep/output/output" class="x-output cqqyEbm" xid="output_date" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cqqyEbm"/>
@@ -33,7 +51,7 @@
                 </li>
               </ul> 
             </div>
-          </div>
+          </div> 
         </div>  
         <div class="x-content-center x-pull-up cqqyEbm" xid="div15" __cid="cqqyEbm"> 
           <span class="x-pull-up-label cqqyEbm" xid="span13" __cid="cqqyEbm">加载更多...</span>

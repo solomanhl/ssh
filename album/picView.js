@@ -10,6 +10,7 @@ define(function(require){
 		this.name = ""
 		this.views = 0;
 		this.pics = 0;
+		this.picDataArray = new Array(); ;//服务器返回的照片json对象，要传到下一页
 	};
 	
 	Model.prototype.modelParamsReceive = function(event){
@@ -71,6 +72,7 @@ define(function(require){
 	}
 	
 	Model.prototype.getAlbumPics = function (create_date, isApend){
+		var me = this;
 		var data_thread = this.comp("data_thread");
 		var list1 = this.comp("list1");
 		justep.Baas.sendRequest({
@@ -83,6 +85,7 @@ define(function(require){
 			},
 			"success" : function(data) {
 				data_thread.loadData(data, isApend);
+				me.picDataArray.push(data);
 //				alert(data_thread.count());
 			}
 		});
@@ -102,13 +105,15 @@ define(function(require){
 	Model.prototype.li2Click = function(event){
 		var row = event.bindingContext.$object;//获得当前行
 		var url = require.toUrl('./picDetailView.w');
+		
 		var params = {
 	        from : "picView",
 	        uid : this.uid,
 	        aid : this.aid,
 	        name : this.name,//相册名字，大一班
 	        pics : this.pics,//相册照片总数
-	        position : row.index() + 1,//第几个图片，index从0开始，需要+1
+	        picDataArray : this.picDataArray,//整个照片json对象数组
+	        position : row.index(),//第几个图片，index从0开始
 	        tid : row.val("tid"),
 	        filename : row.val("filename"),//图片路径
 	        create_date : row.val("create_date")//相片上传时间/
