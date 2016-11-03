@@ -31,7 +31,7 @@ define(function(require){
 		
 		this.comp("output_name").set({"value" : this.name});
 		this.comp("output_count").set({"value" : this.position + "/" + this.pics});
-		$(this.getElementByXid("image1")).attr("src", this.imgUrl(this.filename));
+//		$(this.getElementByXid("image1")).attr("src", this.imgUrl(this.filename));
 		this.comp("output_date").set({"value" : this.create_date});
 		
 		this.getPosts(this.tid, false);

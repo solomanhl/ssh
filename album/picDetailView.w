@@ -7,7 +7,9 @@
   <column name="isfirst" type="Integer" xid="xid4"></column>
   <column name="create_date" type="String" xid="xid5"></column>
   <column name="quote_pid" type="Integer" xid="xid6"></column>
-  <column name="message" type="String" xid="xid7"></column></div></div> 
+  <column name="message" type="String" xid="xid7"></column></div>
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="pics" idColumn="tid"><column name="tid" type="Integer" xid="xid8"></column>
+  <column name="filename" type="String" xid="xid9"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-top" xid="top1"><div xid="div_top"><a component="$UI/system/components/justep/button/button" class="btn btn-default" xid="backBtn" icon="icon-chevron-left" onClick="backBtnClick">
    <i xid="i1" class="icon-chevron-left"></i>
@@ -19,10 +21,22 @@
   
   <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1">
    
-   <div class="x-scroll-content" xid="div14"><div xid="div_pic"><img src="" alt="" xid="image1"></img></div><div xid="div_subject"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_date"></div></div><div xid="div_pinlun"><label xid="label_pinlun"><![CDATA[最新评论]]></label>
+   <div class="x-scroll-content" xid="div14"><div component="$UI/system/components/justep/panel/panel" class="x-panel x-card" xid="panel_pic">
+   <div class="x-panel-content" xid="content3"><div component="$UI/system/components/bootstrap/carousel/carousel" class="x-carousel" xid="carousel1">
+   <ol class="carousel-indicators" xid="ol1" bind-visible="false"></ol>
+   <div class="x-contents carousel-inner" role="listbox" component="$UI/system/components/justep/contents/contents" active="0" slidable="true" wrap="true" swipe="true" routable="false" xid="contentsImg">
+    <div class="x-contents-content" xid="content2"><img src="" alt="" xid="image1"></img></div></div> 
+   <a class="left carousel-control" role="button" xid="a1" bind-visible="false">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" xid="span2"></span>
+    <span class="sr-only" xid="span4">Previous</span></a> 
+   <a class="right carousel-control" role="button" xid="a2" bind-visible="false">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" xid="span5"></span>
+    <span class="sr-only" xid="span6">Next</span></a> </div></div>
+   </div><div xid="div_subject"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_date"></div></div><div xid="div_pinlun"><label xid="label_pinlun"><![CDATA[最新评论]]></label>
   <div component="$UI/system/components/justep/list/list" class="x-list" xid="list1" data="post">
    <ul class="x-list-template" xid="listTemplateUl1">
-    <li xid="li5"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_pinlun" bind-ref='ref("message")'></div></li></ul> </div></div></div>
+    <li xid="li5"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_pinlun" bind-ref='ref("message")'></div></li></ul> </div></div>
+  </div>
    <div class="x-content-center x-pull-up" xid="div15">
     <span class="x-pull-up-label" xid="span13">加载更多...</span></div> </div></div>
    <div class="x-panel-bottom" xid="bottom1">
