@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cyA7jIn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyA7jIn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyA7jIn" class="cyA7jIn"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcqm2qE3-iosstatusbar cyA7jIn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyA7jIn"> 
+    <div class="x-panel-content cyA7jIn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyA7jIn">
+      <div xid="div_icon" __cid="cyA7jIn" class="cyA7jIn">
+        <img src="$model/UI2/ssh/img/user_pic.png" alt="" xid="image_icon" __cid="cyA7jIn" class="cyA7jIn"/>
+      </div>  
+      <div xid="div2" __cid="cyA7jIn" class="cyA7jIn">
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control cyA7jIn" xid="input_name" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入用户名&quot;}" __cid="cyA7jIn"/>  
+        <input component="$model/UI2/system/components/justep/input/password" class="form-control cyA7jIn" xid="password1" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入密码&quot;}" __cid="cyA7jIn"/>
+      </div>  
+      <div xid="div3" __cid="cyA7jIn" class="cyA7jIn">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cyA7jIn" xid="button_login" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button_loginClick" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="cyA7jIn"> 
+          <i xid="i1" __cid="cyA7jIn" class="cyA7jIn"/>  
+          <span xid="span1" __cid="cyA7jIn" class="cyA7jIn">登录</span>
+        </a>
+      </div>  
+      <div xid="div_other" __cid="cyA7jIn" class="cyA7jIn">
+        <span xid="span_reg" bind-click="span_regClick" __cid="cyA7jIn" class="cyA7jIn">新用户注册</span>
+        <span xid="span_forget" __cid="cyA7jIn" class="cyA7jIn">忘记密码</span>  
+        <span xid="span_wx" __cid="cyA7jIn" class="cyA7jIn">微信登录</span> 
+      </div>
+    </div>  
+    <style __cid="cyA7jIn" class="cyA7jIn">.x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqm2qE3-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>
