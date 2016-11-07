@@ -36,9 +36,36 @@ define(function(require){
 				pwd : pwd
 			},
 			"success" : function(data) {
+				var status = data.status;
+				var str = "";
+				switch (status){
+					case 1: str = "登录成功";
+						break;
+					case 2: str = "用户名或密码不正确";
+						break;
+					case 0: str = "用户不存在";
+						break;
+					case -1: str = "帐号已禁用";
+						break;
+					default : str = "登录异常";
+						break;
+				}
+				if (justep.Browser.isX5App){
+					window.plugins.toast.show(str, "short", "center");
+				}else{
+					justep.Util.hint(str);
+				}
 			}
 		});
 	}
+
+	Model.prototype.span_regClick = function(event){
+		var url = require.toUrl('./regist.w');
+		var params = {
+	        from : "login",
+	    }
+		justep.Shell.showPage(url, params);
+	};
 
 	return Model;
 });

@@ -9,6 +9,7 @@
   <div xid="div3"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="登录" xid="button_login" onClick="button_loginClick">
    <i xid="i1"></i>
    <span xid="span1">登录</span></a></div>
-  <div xid="div_other"><span xid="span_forget"><![CDATA[忘记密码]]></span>
-  <span xid="span_wx"><![CDATA[微信登录]]></span></div></div>
+  <div xid="div_other"><span xid="span_reg" bind-click="span_regClick"><![CDATA[新用户注册]]></span><span xid="span_forget"><![CDATA[忘记密码]]></span>
+  <span xid="span_wx"><![CDATA[微信登录]]></span>
+  </div></div>
    </div></div>
