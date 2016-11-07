@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cJJbIZr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJJbIZr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cJJbIZr" class="cJJbIZr"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBVFJzy-iosstatusbar cJJbIZr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJJbIZr"> 
+    <div class="x-panel-content cJJbIZr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJJbIZr">
+      <div xid="div_icon" __cid="cJJbIZr" class="cJJbIZr">
+        <img src="$model/UI2/ssh/img/user_pic.png" alt="" xid="image1" __cid="cJJbIZr" class="cJJbIZr"/>
+      </div>  
+      <div xid="div_input" __cid="cJJbIZr" class="cJJbIZr">
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control cJJbIZr" xid="input_uname" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入用户名&quot;}" __cid="cJJbIZr"/>  
+        <input component="$model/UI2/system/components/justep/input/password" class="form-control cJJbIZr" xid="password1" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入密码&quot;}" __cid="cJJbIZr"/>  
+        <input component="$model/UI2/system/components/justep/input/password" class="form-control cJJbIZr" xid="password2" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;再次输入密码&quot;}" __cid="cJJbIZr"/>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control cJJbIZr" xid="input_phone" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;手机号码&quot;}" __cid="cJJbIZr"/>
+      </div>  
+      <div xid="div_submit" __cid="cJJbIZr" class="cJJbIZr">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJJbIZr" xid="button_submit" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button_submitClick" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cJJbIZr"> 
+          <i xid="i1" __cid="cJJbIZr" class="cJJbIZr"/>  
+          <span xid="span1" __cid="cJJbIZr" class="cJJbIZr">注册</span>
+        </a>
+      </div>
+    </div>  
+    <style __cid="cJJbIZr" class="cJJbIZr">.x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBVFJzy-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>
