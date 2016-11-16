@@ -66,7 +66,7 @@ define(function(require){
 	};
 
 	//相册
-	Model.prototype.button4Click = function(event){
+	Model.prototype.button3Click = function(event){
 		var url = require.toUrl('./album/picList.w');
 		var params = {
 	        from : "main",

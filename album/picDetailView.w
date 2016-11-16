@@ -12,10 +12,10 @@
   <column name="filename" type="String" xid="xid9"></column>
   <column name="create_date" type="String" xid="xid10"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
-   <div class="x-panel-top" xid="top1"><div xid="div_top"><a component="$UI/system/components/justep/button/button" class="btn btn-default" xid="backBtn" icon="icon-chevron-left" onClick="backBtnClick">
+   <div class="x-panel-top" xid="top1"><div xid="div_top"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" xid="backBtn" icon="icon-chevron-left" onClick="{operation:'window.close'}">
    <i xid="i1" class="icon-chevron-left"></i>
    <span xid="span1"></span></a><div xid="div_info"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_name"></div>
-  <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_count"></div></div></div></div><div class="x-panel-content  x-scroll-view" xid="content1" _xid="C747359B4E400001ACAB18FAC8106220" style="top: 0px;">
+  <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_count"></div></div></div></div><div class="x-panel-content x-cards" xid="content1" _xid="C747359B4E400001ACAB18FAC8106220">
   
   
   

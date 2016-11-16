@@ -12,12 +12,14 @@
   <master xid="default2"></master></div>
   <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="data_date" limit="-1" idColumn="create_date"><column name="create_date" type="String" xid="xid8"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
-   <div class="x-panel-content  x-scroll-view " xid="content1" _xid="C745D3362800000164D973001A4911F3" style="top: 0px; bottom: 0px;">
+   <div class="x-panel-content x-scroll-view" xid="content1" _xid="C745D3362800000164D973001A4911F3" style="top: 0px; bottom: 0px;">
   <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1">
    <div class="x-content-center x-pull-down container" xid="div1">
     <i class="x-pull-down-img glyphicon x-icon-pull-down" xid="i1"></i>
     <span class="x-pull-down-label" xid="span1">下拉刷新...</span></div> 
-   <div class="x-scroll-content" xid="div2"><div xid="div_cover"><img src="$UI/ssh/img/album.jpg" alt="" xid="image_cover" style="width:100%;"></img>
+   <div class="x-scroll-content" xid="div2"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" xid="backBtn" icon="icon-chevron-left" onClick="{operation:'window.close'}">
+   <i xid="i3" class="icon-chevron-left"></i>
+   <span xid="span3"></span></a><div xid="div_cover"><img src="$UI/ssh/img/album.jpg" alt="" xid="image_cover" style="width:100%;"></img>
   <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_name"></div>
   <div component="$UI/system/components/justep/output/output" class="x-output" xid="output_views"></div></div>
   <div xid="div_new"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="上传图片" xid="button_new" onClick="button_newClick">

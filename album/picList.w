@@ -8,7 +8,13 @@
   <column label="有多少图片" name="pics" type="Integer" xid="xid4"></column>
   <column name="views" type="Integer" xid="xid6"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
-   <div class="x-panel-content  x-scroll-view" xid="content1" _xid="C74599CDEBC00001E0E019481C12D8D0" style="top: 0px; bottom: 0px;">
+   <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1" title="相册">
+   <div class="x-titlebar-left" xid="left1"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" xid="backBtn" icon="icon-chevron-left" onClick="{operation:'window.close'}">
+   <i xid="i3" class="icon-chevron-left"></i>
+   <span xid="span3"></span></a></div>
+   <div class="x-titlebar-title" xid="title1">相册</div>
+   <div class="x-titlebar-right reverse" xid="right1"></div>
+  </div></div><div class="x-panel-content  x-scroll-view" xid="content1" _xid="C74599CDEBC00001E0E019481C12D8D0">
   <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1">
    <div class="x-content-center x-pull-down container" xid="div2">
     <i class="x-pull-down-img glyphicon x-icon-pull-down" xid="i1"></i>

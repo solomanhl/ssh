@@ -139,9 +139,9 @@ define(function(require){
 
 	};
 
-	Model.prototype.backBtnClick = function(event){
-		justep.Shell.closePage();
-	};
+//	Model.prototype.backBtnClick = function(event){
+//		justep.Shell.closePage();
+//	};
 
 	Model.prototype.modelLoad = function(event){
 		//监听返回键

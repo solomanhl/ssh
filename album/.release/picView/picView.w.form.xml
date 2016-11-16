@@ -4,13 +4,17 @@
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.tb-listBox.caiE3ma{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.caiE3ma div.caiE3ma{background-color: rgb(255, 255, 255)}</xhtml:style>  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="caiE3ma" class="caiE3ma"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcAvI3Mz-iosstatusbar caiE3ma" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caiE3ma"> 
-    <div class="x-panel-content  x-scroll-view  caiE3ma" xid="content1" _xid="C745D3362800000164D973001A4911F3" style="top: 0px; bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caiE3ma"> 
+    <div class="x-panel-content x-scroll-view caiE3ma" xid="content1" _xid="C745D3362800000164D973001A4911F3" style="top: 0px; bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caiE3ma"> 
       <div class="x-scroll caiE3ma" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="caiE3ma"> 
         <div class="x-content-center x-pull-down container caiE3ma" xid="div1" __cid="caiE3ma"> 
           <i class="x-pull-down-img glyphicon x-icon-pull-down caiE3ma" xid="i1" __cid="caiE3ma"/>  
           <span class="x-pull-down-label caiE3ma" xid="span1" __cid="caiE3ma">下拉刷新...</span>
         </div>  
         <div class="x-scroll-content caiE3ma" xid="div2" __cid="caiE3ma">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon caiE3ma" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="caiE3ma"> 
+            <i xid="i3" class="icon-chevron-left caiE3ma" __cid="caiE3ma"/>  
+            <span xid="span3" __cid="caiE3ma" class="caiE3ma"/>
+          </a>
           <div xid="div_cover" __cid="caiE3ma" class="caiE3ma">
             <img src="$model/UI2/ssh/img/album.jpg" alt="" xid="image_cover" style="width:100%;" __cid="caiE3ma" class="caiE3ma"/>  
             <div component="$model/UI2/system/components/justep/output/output" class="x-output caiE3ma" xid="output_name" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="caiE3ma"/>  

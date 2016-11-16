@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:232px;left:81px;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="user" idColumn="uid"><column label="用户编号" name="uid" type="Integer" xid="xid3"></column>
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:220px;left:328px;" onLoad="modelLoad"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="user" idColumn="uid"><column label="用户编号" name="uid" type="Integer" xid="xid3"></column>
   <data xid="default1">[]</data>
   <column label="用户组编号" name="gid" type="Integer" xid="xid1"></column>
   <column label="用户名" name="username" type="String" xid="xid4"></column>
@@ -12,7 +12,10 @@
   
   </div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
-   <div class="x-panel-content" xid="content1">
+   <div class="x-panel-top" xid="top1" style="background-color:transparent;"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1" title="师生会">
+   <div class="x-titlebar-left" xid="left1"></div>
+   <div class="x-titlebar-title" xid="title1">师生会</div>
+   <div class="x-titlebar-right reverse" xid="right1"></div></div></div><div class="x-panel-content" xid="content1">
   <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1" onPullDown="scrollView1PullDown">
    <div class="x-content-center x-pull-down container" xid="div2">
     <i class="x-pull-down-img glyphicon x-icon-pull-down" xid="i1"></i>
@@ -32,12 +35,12 @@
   <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="最新动态" xid="button2">
    <i xid="i3"></i>
    <span xid="span4">最新动态</span></a>
-  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="更多" xid="button3">
+  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="相册" xid="button3" onClick="button3Click">
    <i xid="i4"></i>
-   <span xid="span5">更多</span></a>
-  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="相册" xid="button4" onClick="button4Click">
+   <span xid="span5">相册</span></a>
+  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="更多" xid="button4">
    <i xid="i5"></i>
-   <span xid="span6">相册</span></a></div></div>
+   <span xid="span6">更多</span></a></div></div>
   
   <div xid="div_new"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="发新帖" xid="button_new" onClick="button_newClick">
    <i xid="i6"></i>

@@ -5,7 +5,7 @@
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNjAVJf-iosstatusbar cqqyEbm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqyEbm"> 
     <div class="x-panel-top cqqyEbm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqqyEbm">
       <div xid="div_top" __cid="cqqyEbm" class="cqqyEbm">
-        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cqqyEbm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cqqyEbm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqqyEbm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cqqyEbm"> 
           <i xid="i1" class="icon-chevron-left cqqyEbm" __cid="cqqyEbm"/>  
           <span xid="span1" __cid="cqqyEbm" class="cqqyEbm"/>
         </a>
@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <div class="x-panel-content  x-scroll-view cqqyEbm" xid="content1" _xid="C747359B4E400001ACAB18FAC8106220" style="top: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqqyEbm"> 
+    <div class="x-panel-content x-cards cqqyEbm" xid="content1" _xid="C747359B4E400001ACAB18FAC8106220" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqqyEbm"> 
       <div class="x-scroll cqqyEbm" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cqqyEbm"> 
         <div class="x-scroll-content cqqyEbm" xid="div14" __cid="cqqyEbm">
           <div xid="div_pic" __cid="cqqyEbm" class="cqqyEbm">

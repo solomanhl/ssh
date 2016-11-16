@@ -22,7 +22,12 @@
   <column name="message_fmt" type="String" xid="xid19"></column>
   <column label="作者或回复者名字" name="username" type="String" xid="xid20"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
-   <div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_subject" bind-ref='$model.t_info.ref("subject")'></div><div xid="div_time_user"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_time" bind-text='$model.datelineToDate( $model.t_info.val("create_date"))'></div><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_uname" bind-ref='$model.t_info.ref("username")'></div></div>
+   <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1" title="师生会">
+   <div class="x-titlebar-left" xid="left1"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" xid="backBtn" icon="icon-chevron-left" onClick="{operation:'window.close'}">
+   <i xid="i2" class="icon-chevron-left"></i>
+   <span xid="span2"></span></a></div>
+   <div class="x-titlebar-title" xid="title1">师生会</div>
+   <div class="x-titlebar-right reverse" xid="right1"></div></div></div><div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_subject" bind-ref='$model.t_info.ref("subject")'></div><div xid="div_time_user"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_time" bind-text='$model.datelineToDate( $model.t_info.val("create_date"))'></div><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_uname" bind-ref='$model.t_info.ref("username")'></div></div>
   <div xid="div_guanzhu"><img src="$UI/ssh/img/views.png" alt="" xid="image1"></img>
   <label xid="label1"><![CDATA[点蓝字关注我们哦]]></label></div>
   <div xid="div_msg"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output_msg"></div></div>

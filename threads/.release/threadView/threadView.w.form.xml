@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cueA36j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cueA36j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cueA36j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cueA36j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cueA36j" class="cueA36j"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvEf6Ff-iosstatusbar cueA36j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cueA36j"> 
+    <div class="x-panel-top cueA36j" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueA36j">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cueA36j" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;师生会&quot;}" __cid="cueA36j"> 
+        <div class="x-titlebar-left cueA36j" xid="left1" __cid="cueA36j">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cueA36j" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cueA36j"> 
+            <i xid="i2" class="icon-chevron-left cueA36j" __cid="cueA36j"/>  
+            <span xid="span2" __cid="cueA36j" class="cueA36j"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cueA36j" xid="title1" __cid="cueA36j">师生会</div>  
+        <div class="x-titlebar-right  cueA36j" xid="right1" __cid="cueA36j">
+          <div class="empty cueA36j" __cid="cueA36j"/>
+        </div>
+      </div>
+    </div>
     <div class="x-panel-content cueA36j" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueA36j">
       <div component="$model/UI2/system/components/justep/output/output" class="x-output cueA36j" xid="output_subject" data-bind="component:{ref:$model.t_info.ref(&quot;subject&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cueA36j"/>
       <div xid="div_time_user" __cid="cueA36j" class="cueA36j">
@@ -66,7 +80,7 @@
         </div>
       </div>
     </div>  
-    <style __cid="cueA36j" class="cueA36j">.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+    <style __cid="cueA36j" class="cueA36j">.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvEf6Ff-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
   </div>  
   <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cueA36j" xid="popOver_pinlun" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;div_bottom&quot;,&quot;direction&quot;:&quot;auto&quot;}" __cid="cueA36j"> 
     <div class="x-popOver-overlay cueA36j" xid="div1" __cid="cueA36j"/>  
