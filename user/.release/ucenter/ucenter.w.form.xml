@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cnqMnii" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnqMnii" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.tb-menu.table.cnqMnii &gt; tbody.cnqMnii &gt; tr.cnqMnii &gt; td.cnqMnii{border: 0; width: 20%} .tb-menu.table.cnqMnii &gt; tbody.cnqMnii &gt; tr.cnqMnii &gt; td.cnqMnii{padding-left: 0; padding-right: 0} .tb-img5.cnqMnii{width: 70%}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cnqMnii" class="cnqMnii"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7R7f6n-iosstatusbar cnqMnii" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnqMnii"> 
+    <div class="x-panel-top cnqMnii" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnqMnii"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cnqMnii" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;个人中心&quot;}" __cid="cnqMnii"> 
+        <div class="x-titlebar-left cnqMnii" __cid="cnqMnii"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cnqMnii" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cnqMnii"> 
+            <i class="icon-chevron-left cnqMnii" __cid="cnqMnii"/>  
+            <span __cid="cnqMnii" class="cnqMnii"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cnqMnii" __cid="cnqMnii">个人中心</div>  
+        <div class="x-titlebar-right  cnqMnii" __cid="cnqMnii">
+          <div class="empty cnqMnii" __cid="cnqMnii"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cnqMnii" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnqMnii">
+      <table class="table tb-menu cnqMnii" component="$model/UI2/system/components/bootstrap/table/table" xid="table1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cnqMnii"> 
+        <tbody class="x-list-template cnqMnii" xid="listTemplate1" __cid="cnqMnii"> 
+          <tr xid="tr1" __cid="cnqMnii" class="cnqMnii"> 
+            <td xid="td1" bind-click="openPageClick" pagename="./minpian.w" __cid="cnqMnii" class="cnqMnii">
+              <div xid="div1" class="text-center cnqMnii" __cid="cnqMnii">
+                <img src="$model/UI2/ssh/img/logo.png" alt="" xid="image1" class="center-block img-responsive tb-img5 cnqMnii" __cid="cnqMnii"/>  
+                <span xid="span1" __cid="cnqMnii" class="cnqMnii">兴趣名片</span>
+              </div>
+            </td>  
+            <td xid="td2" bind-click="openPageClick" pagename="./tongzhi.w" __cid="cnqMnii" class="cnqMnii">
+              <div xid="div2" class="text-center cnqMnii" __cid="cnqMnii">
+                <img src="$model/UI2/ssh/img/logo.png" alt="" xid="image2" class="center-block img-responsive tb-img5 cnqMnii" __cid="cnqMnii"/>  
+                <span xid="span2" __cid="cnqMnii" class="cnqMnii">消息通知</span>
+              </div>
+            </td>  
+            <td xid="td3" bind-click="openPageClick" pagename="./ziliao.w" __cid="cnqMnii" class="cnqMnii">
+              <div xid="div3" class="text-center cnqMnii" __cid="cnqMnii">
+                <img src="$model/UI2/ssh/img/logo.png" alt="" xid="image3" class="center-block img-responsive tb-img5 cnqMnii" __cid="cnqMnii"/>  
+                <span xid="span3" __cid="cnqMnii" class="cnqMnii">个人资料</span>
+              </div>
+            </td> 
+          </tr>  
+          <tr xid="tr2" __cid="cnqMnii" class="cnqMnii"> 
+            <td xid="td4" bind-click="openPageClick" pagename="./friend.w" __cid="cnqMnii" class="cnqMnii">
+              <div xid="div4" class="text-center cnqMnii" __cid="cnqMnii">
+                <img src="$model/UI2/ssh/img/logo.png" alt="" xid="image4" class="center-block img-responsive tb-img5 cnqMnii" __cid="cnqMnii"/>  
+                <span xid="span4" __cid="cnqMnii" class="cnqMnii">我的好友</span>
+              </div>
+            </td>  
+            <td xid="td5" bind-click="openPageClick" pagename="./favourite.w" __cid="cnqMnii" class="cnqMnii">
+              <div xid="div5" class="text-center cnqMnii" __cid="cnqMnii">
+                <img src="$model/UI2/ssh/img/logo.png" alt="" xid="image5" class="center-block img-responsive tb-img5 cnqMnii" __cid="cnqMnii"/>  
+                <span xid="span5" __cid="cnqMnii" class="cnqMnii">我的收藏</span>
+              </div>
+            </td>  
+            <td xid="td6" bind-click="openPageClick" pagename="./yijian.w" __cid="cnqMnii" class="cnqMnii">
+              <div xid="div6" class="text-center cnqMnii" __cid="cnqMnii">
+                <img src="$model/UI2/ssh/img/logo.png" alt="" xid="image6" class="center-block img-responsive tb-img5 cnqMnii" __cid="cnqMnii"/>  
+                <span xid="span6" __cid="cnqMnii" class="cnqMnii">意见反馈</span>
+              </div>
+            </td> 
+          </tr>
+        </tbody> 
+      </table>
+    </div>  
+    <style __cid="cnqMnii" class="cnqMnii">.x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7R7f6n-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

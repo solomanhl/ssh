@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cyqmm2y" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyqmm2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyqmm2y" class="cyqmm2y"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvMnU7r-iosstatusbar cyqmm2y" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyqmm2y"> 
+    <div class="x-panel-top cyqmm2y" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyqmm2y"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyqmm2y" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的收藏&quot;}" __cid="cyqmm2y"> 
+        <div class="x-titlebar-left cyqmm2y" __cid="cyqmm2y"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cyqmm2y" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cyqmm2y"> 
+            <i class="icon-chevron-left cyqmm2y" __cid="cyqmm2y"/>  
+            <span __cid="cyqmm2y" class="cyqmm2y"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cyqmm2y" __cid="cyqmm2y">我的收藏</div>  
+        <div class="x-titlebar-right  cyqmm2y" __cid="cyqmm2y">
+          <div class="empty cyqmm2y" __cid="cyqmm2y"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cyqmm2y" xid="content1" _xid="C74E8AC46ED00001D8E37D50173A1C27" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyqmm2y">
+      <div class="x-scroll cyqmm2y" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cyqmm2y"> 
+        <div class="x-scroll-content cyqmm2y" xid="div2" __cid="cyqmm2y">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cyqmm2y" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cyqmm2y"> 
+            <ul class="x-list-template hide cyqmm2y" xid="listTemplateUl1" __cid="cyqmm2y"> 
+              <li xid="li1" __cid="cyqmm2y" class="cyqmm2y">
+                <div xid="div4" __cid="cyqmm2y" class="cyqmm2y">
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_title" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/> 
+                </div>  
+                <div xid="div5" __cid="cyqmm2y" class="cyqmm2y">
+                  <span xid="span3" __cid="cyqmm2y" class="cyqmm2y">作者：</span>
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_author" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_time" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>  
+                  <img src="$model/UI2/ssh/img/views.png" alt="" xid="image1" __cid="cyqmm2y" class="cyqmm2y"/>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_view" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up cyqmm2y" xid="div3" __cid="cyqmm2y"> 
+          <span class="x-pull-up-label cyqmm2y" xid="span2" __cid="cyqmm2y">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cyqmm2y" class="cyqmm2y">.x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvMnU7r-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

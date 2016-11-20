@@ -10,6 +10,9 @@ define(function(require) {
 			"pageMappings" : {
 				"main" : {
 					url : require.toUrl('./main.w')
+				},
+				"login" : {
+					url : require.toUrl('./user/login.w')
 				}
 			}
 		})
@@ -17,22 +20,23 @@ define(function(require) {
 	};
 
 	Model.prototype.modelLoad = function(event){
-		var weixinCode = this.getContext().getRequestParameter("code");
-		if (weixinCode != ""){
-			justep.Baas.sendRequest({
-				"url" : "/weixinSSH/weixin",
-				"action" : "userinfo",
-				"async" : false,
-				"params" : {
-					code : weixinCode
-				},
-				"success" : function(wxUser) {
-					alert(wxUser.nickname + wxUser.openid);
-				}
-			});
-		}
+//		var weixinCode = this.getContext().getRequestParameter("code");
+//		if (weixinCode != ""){
+//			justep.Baas.sendRequest({
+//				"url" : "/weixinSSH/weixin",
+//				"action" : "UserInfo",
+//				"async" : false,
+//				"params" : {
+//					code : weixinCode
+//				},
+//				"success" : function(wxUser) {
+//					alert(wxUser.nickname + wxUser.openid);
+//				}
+//			});
+//		}
 	
-		justep.Shell.showPage("main");
+//		justep.Shell.showPage("main");
+		justep.Shell.showPage("login");
 	};
 
 	return Model;

@@ -27,6 +27,7 @@ define(function(require){
 	};
 	
 	Model.prototype.login = function (uname, pwd){
+		var me = this;
 		justep.Baas.sendRequest({
 			"url" : "/ssh/user",
 			"action" : "login",
@@ -50,10 +51,14 @@ define(function(require){
 					default : str = "登录异常";
 						break;
 				}
-				if (justep.Browser.isX5App){
-					window.plugins.toast.show(str, "short", "center");
+				if (justep.Browser.isX5App){					
+					window.plugins.toast.show(str, "short", "center");					
 				}else{
 					justep.Util.hint(str);
+				}
+				if (status == 1){
+					me.saveLocal(data.uid, data.gid, data.username, data.password, data.status);
+					justep.Shell.closePage();
 				}
 			}
 		});
@@ -67,5 +72,24 @@ define(function(require){
 		justep.Shell.showPage(url, params);
 	};
 
+	Model.prototype.modelLoad = function(event){
+		//监听返回键
+ 		document.addEventListener('backbutton', function(){
+ 			justep.Shell.closePage();
+ 		}, false);
+ 		$(window).on('beforeunload', function(){
+ 			document.removeEventListener('backbutton', listener, false);
+ 	    });
+	};
+
+	//保存到本地
+	Model.prototype.saveLocal = function (uid,gid, username, password, loginState){
+		localStorage.setItem('uid',uid); 
+		localStorage.setItem('gid',gid); 
+		localStorage.setItem('username',username); 
+		localStorage.setItem('password',password);
+		localStorage.setItem('loginState',loginState); 
+	};
+	
 	return Model;
 });

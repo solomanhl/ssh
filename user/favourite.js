@@ -1,40 +1,9 @@
 define(function(require){
 	var $ = require("jquery");
 	var justep = require("$UI/system/lib/justep");
-	
+
 	var Model = function(){
 		this.callParent();
-		this.uid = 0;
-		this.loginState = 0;
-	};
-
-	Model.prototype.modelLoad = function(event){
-		var me = this;
-		this.uid = this.getParent().uid;
-		this.loginState = this.getParent().loginState;
-//		alert(this.getParent().uid);
-		//帖子列表
-		var threadsData = this.comp("threads");
-		justep.Baas.sendRequest({
-			"url" : "/ssh/baseinfo",
-			"action" : "getThreads",
-			"async" : true,
-			"params" : {
-				"pageNo": 1
-			},
-			"success" : function(data) {
-				var Obj, pageNo, totalPage;	
-	        	pageNo = data.pageNo;
-	        	totalPage = data.totalPage;
-	        	Obj = data.threads;
-	        	
-	        	if (pageNo > 0){
-		        	json={"@type" : "table","threads" : {"idColumnName" : "tid","idColumnType" : "Integer", },"rows" :Obj };
-		        	threadsData.loadData(json, false);
-//		        	alert(threadsData.count());
-	        	}
-			}
-		});
 	};
 
 	//dateline转换
@@ -80,27 +49,5 @@ define(function(require){
 		
 		return rtn;
 	};
-	
-	Model.prototype.li1Click = function(event){
-		var current = event.bindingContext.$object;//获得当前行
-		var url = require.toUrl('./threadView.w');
-		var params = {
-	        from : "threadList",
-	        uid : this.uid,//本机用户的id
-	        data : {
-	            // 将data中的一行数据传给对话框
-	            tid : current.val("tid"),
-	            firstpid : current.val("firstpid"),
-	            username : current.val("username"),//主题作者的用户名
-	            subject : current.val("subject"),
-	            create_date : current.val("create_date"),
-	            last_date : current.val("last_date"),
-	            fid : current.val("fid"),
-	            views : current.val("views")
-	        }
-	    }
-		justep.Shell.showPage(url, params);
-	};
-	
 	return Model;
 });

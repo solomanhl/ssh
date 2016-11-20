@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model"/> 
+  <div component="$UI/system/components/justep/model/model" xid="model" onLoad="modelLoad"/> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-content" xid="content1"><div xid="div_icon"><img src="$UI/ssh/img/user_pic.png" alt="" xid="image_icon"></img></div>
   <div xid="div2"><input component="$UI/system/components/justep/input/input" class="form-control" xid="input_name" placeHolder="请输入用户名"></input>

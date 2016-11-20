@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cnaQj2y" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnaQj2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cnaQj2y" class="cnaQj2y"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceINfYf-iosstatusbar cnaQj2y" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cnaQj2y"> 
+    <div class="x-panel-top cnaQj2y" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnaQj2y"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cnaQj2y" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;兴趣名片&quot;}" __cid="cnaQj2y"> 
+        <div class="x-titlebar-left cnaQj2y" __cid="cnaQj2y"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cnaQj2y" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cnaQj2y"> 
+            <i class="icon-chevron-left cnaQj2y" __cid="cnaQj2y"/>  
+            <span __cid="cnaQj2y" class="cnaQj2y"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cnaQj2y" __cid="cnaQj2y">兴趣名片</div>  
+        <div class="x-titlebar-right  cnaQj2y" __cid="cnaQj2y">
+          <div class="empty cnaQj2y" __cid="cnaQj2y"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cnaQj2y" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cnaQj2y">
+      <div xid="div_backgroud" __cid="cnaQj2y" class="cnaQj2y">
+        <img src="$model/UI2/ssh/img/album.jpg" alt="" xid="image1" style="width:100%;" __cid="cnaQj2y" class="cnaQj2y"/>
+      </div>  
+      <div xid="div2_head" __cid="cnaQj2y" class="cnaQj2y">
+        <img src="$model/UI2/ssh/img/user_pic.png" alt="" xid="image_head" __cid="cnaQj2y" class="cnaQj2y"/>
+      </div>  
+      <div xid="div_name" __cid="cnaQj2y" class="cnaQj2y">
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cnaQj2y" xid="output_name" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cnaQj2y"/>
+      </div>  
+      <div xid="div_guanzhu" __cid="cnaQj2y" class="cnaQj2y">
+        <label xid="label1" __cid="cnaQj2y" class="cnaQj2y">关注</label>
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cnaQj2y" xid="output_guanzhu" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cnaQj2y"/>  
+        <label xid="label2" __cid="cnaQj2y" class="cnaQj2y">粉丝</label>
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cnaQj2y" xid="output_fensi" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cnaQj2y"/> 
+      </div>
+    </div>  
+    <style __cid="cnaQj2y" class="cnaQj2y">.x-panel.pceINfYf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pceINfYf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pceINfYf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceINfYf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceINfYf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pceINfYf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceINfYf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceINfYf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceINfYf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

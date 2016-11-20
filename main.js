@@ -5,6 +5,7 @@ define(function(require){
 	var Model = function(){
 		this.callParent();
 		
+		this.loginState = 0;
 		this.uid = 0; 
 		this.username = "admin";//临时
 	};
@@ -74,6 +75,16 @@ define(function(require){
 	        data : {
 	        	//这里要传当前用户id
 	        }
+	    }
+		justep.Shell.showPage(url, params);
+	};
+
+
+	Model.prototype.button4Click = function(event){
+		var url = require.toUrl('./user/ucenter.w');
+		var params = {
+	        from : "main",
+	        uid : this.uid,
 	    }
 		justep.Shell.showPage(url, params);
 	};
