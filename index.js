@@ -24,6 +24,7 @@ define(function(require) {
 	};
 
 	Model.prototype.modelLoad = function(event){
+//		debugger;
 //		var weixinCode = this.getContext().getRequestParameter("code");
 //		if (weixinCode != ""){
 //			justep.Baas.sendRequest({
@@ -40,14 +41,10 @@ define(function(require) {
 //		}
 	
 
-		this.uid = localStorage.getItem('uid');
-		if (this.uid == undefined){
-			this.comp("mainContainer").load(require.toUrl('./user/login.w'));
-		}else{
-			this.comp("mainContainer").load(require.toUrl('./main.w'));
-		}
+		justep.Shell.showPage("main");
 		
 	};
+
 
 
 	return Model;

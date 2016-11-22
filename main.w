@@ -49,4 +49,5 @@
    <div class="x-content-center x-pull-up" xid="div4">
     <span class="x-pull-up-label" xid="span2">加载更多...</span></div> 
   </div></div>
-   </div></div>
+   </div>
+  <span component="$UI/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" onClose="windowDialog1Close"></span></div>

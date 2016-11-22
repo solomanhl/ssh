@@ -59,9 +59,10 @@ define(function(require){
 				if (status == 1){
 					me.saveLocal(data.uid, data.gid, data.username, data.password, data.status);
 //					alert(require.toUrl('../main.w'));
-					justep.Shell.showPage(require.toUrl('../main.w'));
+//					justep.Shell.showPage(require.toUrl('../main.w'));
 //					justep.Shell.closePage(require.toUrl('./login.w'));
 //					justep.Shell.closePage();
+					me.owner.close();
 				}
 			}
 		});

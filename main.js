@@ -13,14 +13,40 @@ define(function(require){
 	};
 
 	Model.prototype.modelLoad = function(event){
-		var me = this;
+		this.getUserInfo();
 		
+		//判断是否登录过
+		if (this.uid == undefined){
+			this.comp("windowDialog1").open({src : require.toUrl('./user/login.w')});
+		}else{
+			this.getHomePageData();			
+		}
+				
+	};
+
+	//发新帖
+	Model.prototype.button_newClick = function(event){
+		var url = require.toUrl('./threads/newThread.w');
+		var params = {
+	        from : "main",
+	        uid : this.uid,
+	        data : {
+	        	//这里要传当前用户id
+	        }
+	    }
+		justep.Shell.showPage(url, params);
+	};
+	
+	Model.prototype.getUserInfo = function(){
 		this.uid = localStorage.getItem("uid");
 		this.gid = localStorage.getItem("gid");
 		this.username = localStorage.getItem("username");
 		this.password = localStorage.getItem("password");
 //		this.loginState = localStorage.getItem("loginState");
-		
+	}
+
+	Model.prototype.getHomePageData = function(){
+		var me = this;
 		//baassend alt+/
 		justep.Baas.sendRequest({
 			"url" : "/ssh/baseinfo",
@@ -51,24 +77,8 @@ define(function(require){
 					me.comp("output_huati").set("value", data.count);
 				}
 			}
-		})
-		
-		
-	};
-
-	//发新帖
-	Model.prototype.button_newClick = function(event){
-		var url = require.toUrl('./threads/newThread.w');
-		var params = {
-	        from : "main",
-	        uid : this.uid,
-	        data : {
-	        	//这里要传当前用户id
-	        }
-	    }
-		justep.Shell.showPage(url, params);
-	};
-
+		});
+	}
 
 	Model.prototype.scrollView1PullDown = function(event){
 		this.comp("windowContainer_topnews").refresh();
@@ -96,6 +106,17 @@ define(function(require){
 	        uid : this.uid,
 	    }
 		justep.Shell.showPage(url, params);
+	};
+
+
+	Model.prototype.windowDialog1Close = function(event){
+		this.getUserInfo();
+		//判断是否登录过
+		if (this.uid == undefined){
+//			this.comp("windowDialog1").open({src : require.toUrl('./user/login.w')});
+		}else{
+			this.getHomePageData();			
+		}
 	};
 
 

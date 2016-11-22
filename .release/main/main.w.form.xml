@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c6JRnEb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6JRnEb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c6JRnEb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6JRnEb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/buttonGroup,">  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c6JRnEb" class="c6JRnEb"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcqyYnui-iosstatusbar c6JRnEb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6JRnEb"> 
     <div class="x-panel-top c6JRnEb" xid="top1" style="background-color:transparent;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6JRnEb">
@@ -67,7 +67,7 @@
                 <div xmlns="" component="$model/UI2/system/components/justep/list/list" class="x-list cZRR7j2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;threads&quot;,&quot;limit&quot;:4}" __cid="cZRR7j2">  
                   <ul class="x-list-template hide cZRR7j2" xid="listTemplateUl1" __cid="cZRR7j2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
                     <li xid="li1" __cid="cZRR7j2" class="cZRR7j2" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
-                      <img src="@justepContextPath@/v_89fa5a71827b41d4bfb2b06853fb6075l_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image1" __cid="cZRR7j2" class="cZRR7j2"/>  
+                      <img src="@justepContextPath@/v_973f11273d2e4109b838ba6619f0b501l_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image1" __cid="cZRR7j2" class="cZRR7j2"/>  
                       <div component="$model/UI2/system/components/justep/output/output" class="x-output cZRR7j2" xid="output1" data-bind="component:{ref:ref(&quot;subject&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cZRR7j2"/> 
                     </li> 
                   </ul> 
@@ -85,13 +85,13 @@
                       <div class="media cQFfEfq" xid="media_head" __cid="cQFfEfq"> 
                         <div class="media-left cQFfEfq" xid="mediaLeft1" __cid="cQFfEfq"> 
                           <a href="#" xid="a1" __cid="cQFfEfq" class="cQFfEfq"> 
-                            <img class="media-object cQFfEfq" src="@justepContextPath@/v_4970edb1cc694a8bb2dd8c2cf22f1da3l_zh_CNs_d_m/ssh/img/user_pic.png" alt="" xid="image1" style="width:58px;height:59px;" __cid="cQFfEfq"/> 
+                            <img class="media-object cQFfEfq" src="@justepContextPath@/v_82d68dd7c5da4855b84f061ce19cb151l_zh_CNs_d_m/ssh/img/user_pic.png" alt="" xid="image1" style="width:58px;height:59px;" __cid="cQFfEfq"/> 
                           </a> 
                         </div>  
                         <div class="media-body cQFfEfq" xid="mediaBody1" __cid="cQFfEfq"> 
                           <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_uname" data-bind="component:{ref:ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/>  
                           <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_time" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:$model.datelineToBeforeDay( val(&quot;create_date&quot;))" __cid="cQFfEfq"/>  
-                          <img src="@justepContextPath@/v_f8cb5694539a4766a08426c4085a1a40l_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image_view" __cid="cQFfEfq" class="cQFfEfq"/>  
+                          <img src="@justepContextPath@/v_8f0d3627f89a4e50819c3f647ada9e7al_zh_CNs_d_m/ssh/img/views.png" alt="" xid="image_view" __cid="cQFfEfq" class="cQFfEfq"/>  
                           <div component="$model/UI2/system/components/justep/output/output" class="x-output cQFfEfq" xid="output_view" data-bind="component:{ref:ref(&quot;views&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQFfEfq"/> 
                         </div> 
                       </div>  
@@ -115,5 +115,17 @@
       </div>
     </div>  
     <style __cid="c6JRnEb" class="c6JRnEb">.x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqyYnui-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
-  </div>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:windowDialog1Close" __cid="c6JRnEb" class="c6JRnEb">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c6JRnEb" __cid="c6JRnEb"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c6JRnEb" style="display:none;" __cid="c6JRnEb">
+      <xhtml:div class="x-dialog-title c6JRnEb" __cid="c6JRnEb">
+        <xhtml:button class="close c6JRnEb" __cid="c6JRnEb">
+          <xhtml:span __cid="c6JRnEb" class="c6JRnEb">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c6JRnEb" __cid="c6JRnEb"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c6JRnEb" __cid="c6JRnEb"/>
+    </xhtml:div>
+  </span>
 </div>
