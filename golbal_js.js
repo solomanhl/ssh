@@ -3,8 +3,8 @@ define(function(require){
 	var justep = require("$UI/system/lib/justep");
 
 	return {
-		server : "http://localhost/xiuno/"
-//		server : "http://2f6bb214.ngrok.io/xiuno/"
+//		server : "http://localhost/xiuno/"
+		server : "http://solomanhl.3322.org:8890/xiuno/"
 	}
 	
 	

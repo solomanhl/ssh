@@ -6,12 +6,21 @@ define(function(require){
 		this.callParent();
 		
 		this.loginState = 0;
-		this.uid = 0; 
-		this.username = "admin";//临时
+		this.uid; 
+		this.gid;
+		this.password;
+		this.username ;
 	};
 
 	Model.prototype.modelLoad = function(event){
 		var me = this;
+		
+		this.uid = localStorage.getItem("uid");
+		this.gid = localStorage.getItem("gid");
+		this.username = localStorage.getItem("username");
+		this.password = localStorage.getItem("password");
+//		this.loginState = localStorage.getItem("loginState");
+		
 		//baassend alt+/
 		justep.Baas.sendRequest({
 			"url" : "/ssh/baseinfo",

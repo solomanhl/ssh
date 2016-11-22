@@ -64,6 +64,9 @@ define(function(require){
 				}else{
 					justep.Util.hint(str);
 				}
+				if (status == 1){
+					justep.Shell.closePage();
+				}
 			}
 		});
 	}

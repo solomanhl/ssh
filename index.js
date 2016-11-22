@@ -5,17 +5,21 @@ define(function(require) {
 
 	var Model = function() {
 		this.callParent();
-		var shellImpl = new ShellImpl(this, {
+		this.uid;
+		var shell = new ShellImpl(this, {
 			"contentsXid" : "pages",
-			"pageMappings" : {
+			pageMappings : {
 				"main" : {
-					url : require.toUrl('./main.w')
+					url : require.toUrl('./main.w')	
 				},
 				"login" : {
 					url : require.toUrl('./user/login.w')
+				},
+				"regist" : {
+					url : require.toUrl('./user/regist.w')
 				}
 			}
-		})
+		});
 
 	};
 
@@ -35,9 +39,16 @@ define(function(require) {
 //			});
 //		}
 	
-//		justep.Shell.showPage("main");
-		justep.Shell.showPage("login");
+
+		this.uid = localStorage.getItem('uid');
+		if (this.uid == undefined){
+			this.comp("mainContainer").load(require.toUrl('./user/login.w'));
+		}else{
+			this.comp("mainContainer").load(require.toUrl('./main.w'));
+		}
+		
 	};
+
 
 	return Model;
 });
