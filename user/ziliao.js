@@ -5,6 +5,7 @@ define(function(require){
 
 	var Model = function(){
 		this.callParent();
+		this.uid;
 	};
 
 	Model.prototype.modelLoad = function(event){
@@ -17,5 +18,30 @@ define(function(require){
  	    });
 	};
 
+
+	Model.prototype.getUserInfo = function (){
+		var data = this.comp("ziliao");
+		justep.Baas.sendRequest({
+			"url" : "/ssh/user",
+			"action" : "getUserInfo",
+			"async" : true,
+			"params" : {
+				uid : this.uid
+			},
+			"success" : function(obj) {
+				data.loadData(obj, false);
+				data.first();
+			},
+			"error" : function(obj){
+			}
+		});
+	}
+	
+	Model.prototype.modelParamsReceive = function(event){
+		var context = this.getContext();
+		this.uid = event.params.uid;
+		
+		this.getUserInfo();
+	};
 	return Model;
 });

@@ -5,8 +5,14 @@ define(function(require){
 
 	var Model = function(){
 		this.callParent();
+		this.uid;
 	};
-
+	
+	Model.prototype.modelParamsReceive = function(event){
+		var context = this.getContext();
+		this.uid = event.params.uid;
+	};
+	
 	Model.prototype.modelLoad = function(event){
 		//监听返回键
  		document.addEventListener('backbutton', function(){
@@ -23,8 +29,13 @@ define(function(require){
 		 * 1、点击组件增加算定义属性：pagename 2、获取自定义属性，打开 对应页面
 		 */
 		var pageName = event.currentTarget.getAttribute('pagename');
+		var params = {
+	        from : "ucenter",
+	        uid : this.uid,
+	    }
 		if (pageName)
-			justep.Shell.showPage(require.toUrl(pageName));
+			justep.Shell.showPage(require.toUrl(pageName), params);
 	};
+
 	return Model;
 });

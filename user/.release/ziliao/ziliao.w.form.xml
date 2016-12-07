@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window czyAVZv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czyAVZv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="czyAVZv" class="czyAVZv"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmyYNny-iosstatusbar czyAVZv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czyAVZv"> 
+    <div class="x-panel-top czyAVZv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czyAVZv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czyAVZv" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的资料&quot;}" __cid="czyAVZv"> 
+        <div class="x-titlebar-left czyAVZv" __cid="czyAVZv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czyAVZv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="czyAVZv"> 
+            <i class="icon-chevron-left czyAVZv" __cid="czyAVZv"/>  
+            <span __cid="czyAVZv" class="czyAVZv"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czyAVZv" __cid="czyAVZv">我的资料</div>  
+        <div class="x-titlebar-right  czyAVZv" __cid="czyAVZv">
+          <div class="empty czyAVZv" __cid="czyAVZv"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content czyAVZv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czyAVZv"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-card pcmeeyIr-iosstatusbar czyAVZv" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czyAVZv"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
+          <label class="x-label czyAVZv" xid="label1" __cid="czyAVZv">用户名</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output1" data-bind="component:{ref:$model.ziliao.ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
+        </div>
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
+          <label class="x-label czyAVZv" xid="label2" __cid="czyAVZv">学段</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output2" data-bind="component:{ref:$model.ziliao.ref(&quot;xueduan&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
+        </div>
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
+          <label class="x-label czyAVZv" xid="label3" __cid="czyAVZv">手机号</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output3" data-bind="component:{ref:$model.ziliao.ref(&quot;mobile&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
+        </div>
+        <style __cid="czyAVZv" class="czyAVZv">.x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmeeyIr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-card pcBnaeuy-iosstatusbar czyAVZv" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czyAVZv"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
+          <label class="x-label czyAVZv" xid="label4" __cid="czyAVZv">我的地址</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output4" data-bind="component:{ref:$model.ziliao.ref(&quot;address&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
+        </div>
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
+          <label class="x-label czyAVZv" xid="label5" __cid="czyAVZv">性别</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output5" data-bind="component:{ref:$model.ziliao.ref(&quot;sex&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
+        </div>
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
+          <label class="x-label czyAVZv" xid="label6" __cid="czyAVZv">个性签名</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output6" data-bind="component:{ref:$model.ziliao.ref(&quot;sign&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
+        </div>
+        <style __cid="czyAVZv" class="czyAVZv">.x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBnaeuy-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>
+    </div>  
+    <style __cid="czyAVZv" class="czyAVZv">.x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmyYNny-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>
