@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cyqmm2y" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyqmm2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cyqmm2y" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyqmm2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyqmm2y" class="cyqmm2y"></div>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cyqmm2y" class="cyqmm2y"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvMnU7r-iosstatusbar cyqmm2y" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyqmm2y"> 
     <div class="x-panel-top cyqmm2y" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyqmm2y"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyqmm2y" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的收藏&quot;}" __cid="cyqmm2y"> 
@@ -21,18 +21,18 @@
     <div class="x-panel-content  x-scroll-view cyqmm2y" xid="content1" _xid="C74E8AC46ED00001D8E37D50173A1C27" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyqmm2y">
       <div class="x-scroll cyqmm2y" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cyqmm2y"> 
         <div class="x-scroll-content cyqmm2y" xid="div2" __cid="cyqmm2y">
-          <div component="$model/UI2/system/components/justep/list/list" class="x-list cyqmm2y" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cyqmm2y"> 
-            <ul class="x-list-template hide cyqmm2y" xid="listTemplateUl1" __cid="cyqmm2y"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cyqmm2y" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;favor&quot;}" __cid="cyqmm2y"> 
+            <ul class="x-list-template hide cyqmm2y" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cyqmm2y"> 
               <li xid="li1" __cid="cyqmm2y" class="cyqmm2y">
                 <div xid="div4" __cid="cyqmm2y" class="cyqmm2y">
-                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_title" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_title" data-bind="component:{ref:ref(&quot;subject&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/> 
                 </div>  
                 <div xid="div5" __cid="cyqmm2y" class="cyqmm2y">
                   <span xid="span3" __cid="cyqmm2y" class="cyqmm2y">作者：</span>
-                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_author" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>  
-                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_time" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_author" data-bind="component:{ref:ref(&quot;author&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>  
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_time" bind-text=" $model.datelineToBeforeDay( val(&quot;time&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>  
                   <img src="$model/UI2/ssh/img/views.png" alt="" xid="image1" __cid="cyqmm2y" class="cyqmm2y"/>  
-                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_view" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cyqmm2y" xid="output_view" data-bind="component:{ref:ref(&quot;views&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyqmm2y"/>
                 </div>
               </li>
             </ul> 

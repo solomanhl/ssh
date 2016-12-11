@@ -42,7 +42,7 @@
    <label class="x-label" xid="label4"><![CDATA[我的地址]]></label>
    <div component="$UI/system/components/justep/output/output" class="x-output x-edit" xid="output4" bind-ref='$model.ziliao.ref("address")'></div></div><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit5">
    <label class="x-label" xid="label5"><![CDATA[性别]]></label>
-   <div component="$UI/system/components/justep/output/output" class="x-output x-edit" xid="output5" bind-ref='$model.ziliao.ref("sex")'></div></div><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit6">
+   <div component="$UI/system/components/justep/output/output" class="x-output x-edit" xid="output5" bind-text=' $model.getSex( $model.ziliao.val("sex"))'></div></div><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit6">
    <label class="x-label" xid="label6"><![CDATA[个性签名]]></label>
    <div component="$UI/system/components/justep/output/output" class="x-output x-edit" xid="output6" bind-ref='$model.ziliao.ref("sign")'></div></div></div></div>
   </div> 

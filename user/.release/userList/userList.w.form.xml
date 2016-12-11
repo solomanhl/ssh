@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cY3mQnq" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cY3mQnq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cY3mQnq" class="cY3mQnq"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcR7NBFf-iosstatusbar cY3mQnq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cY3mQnq"> 
+    <div class="x-panel-top cY3mQnq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cY3mQnq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cY3mQnq" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;新的朋友&quot;}" __cid="cY3mQnq"> 
+        <div class="x-titlebar-left cY3mQnq" __cid="cY3mQnq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cY3mQnq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cY3mQnq"> 
+            <i class="icon-chevron-left cY3mQnq" __cid="cY3mQnq"/>  
+            <span __cid="cY3mQnq" class="cY3mQnq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cY3mQnq" __cid="cY3mQnq">新的朋友</div>  
+        <div class="x-titlebar-right  cY3mQnq" __cid="cY3mQnq">
+          <div class="empty cY3mQnq" __cid="cY3mQnq"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cY3mQnq" xid="content1" _xid="C7555D4A6DC0000189AA47008CF017BA" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cY3mQnq">
+      <div class="x-scroll cY3mQnq" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cY3mQnq"> 
+        <div class="x-scroll-content cY3mQnq" xid="div2" __cid="cY3mQnq">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cY3mQnq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;userlist&quot;}" __cid="cY3mQnq"> 
+            <ul class="x-list-template hide cY3mQnq" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cY3mQnq"> 
+              <li xid="li1" __cid="cY3mQnq" class="cY3mQnq">
+                <div class="media cY3mQnq" xid="media1" __cid="cY3mQnq"> 
+                  <div class="media-left cY3mQnq" xid="mediaLeft1" __cid="cY3mQnq"> 
+                    <a href="#" xid="a1" __cid="cY3mQnq" class="cY3mQnq"> 
+                      <img class="media-object cY3mQnq" src="$model/UI2/ssh/img/user_pic.png" alt="" xid="image1" __cid="cY3mQnq"/>
+                    </a> 
+                  </div>  
+                  <div class="media-body cY3mQnq" xid="mediaBody1" __cid="cY3mQnq"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cY3mQnq" xid="output1" data-bind="component:{ref:ref(&quot;username&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cY3mQnq"/>  
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cY3mQnq" xid="button_add" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button_addClick" data-config="{&quot;label&quot;:&quot;申请&quot;}" __cid="cY3mQnq"> 
+                      <i xid="i2" __cid="cY3mQnq" class="cY3mQnq"/>  
+                      <span xid="span3" __cid="cY3mQnq" class="cY3mQnq">申请</span>
+                    </a>
+                  </div> 
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up cY3mQnq" xid="div3" __cid="cY3mQnq"> 
+          <span class="x-pull-up-label cY3mQnq" xid="span2" __cid="cY3mQnq">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cY3mQnq" class="cY3mQnq">.x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcR7NBFf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

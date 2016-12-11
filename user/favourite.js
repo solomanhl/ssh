@@ -49,5 +49,39 @@ define(function(require){
 		
 		return rtn;
 	};
+	Model.prototype.modelParamsReceive = function(event){
+		var context = this.getContext();
+		this.uid = event.params.uid;
+		
+		this.getFavor();
+	};
+	
+	Model.prototype.modelLoad = function(event){
+		//监听返回键
+ 		document.addEventListener('backbutton', function(){
+ 			justep.Shell.closePage();
+ 		}, false);
+ 		$(window).on('beforeunload', function(){
+ 			document.removeEventListener('backbutton', listener, false);
+ 	    });
+	};
+	
+	Model.prototype.getFavor = function (){
+	var data = this.comp("favor");
+		justep.Baas.sendRequest({
+			"url" : "/ssh/user",
+			"action" : "getFavor",
+			"async" : true,
+			"params" : {
+				uid : this.uid
+			},
+			"success" : function(obj) {
+				data.loadData(obj, false);
+			},
+			"error" : function(obj){
+			}
+		});
+	}
+	
 	return Model;
 });

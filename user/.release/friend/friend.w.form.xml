@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cmYRNre" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmYRNre" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cmYRNre" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmYRNre" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
   <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
-  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmYRNre" class="cmYRNre"></div>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cmYRNre" class="cmYRNre"></div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcrI3iIr-iosstatusbar cmYRNre" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmYRNre"> 
     <div class="x-panel-top cmYRNre" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmYRNre"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cmYRNre" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的好友&quot;}" __cid="cmYRNre"> 
@@ -24,8 +24,13 @@
       </div>  
       <div class="x-scroll cmYRNre" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cmYRNre"> 
         <div class="x-scroll-content cmYRNre" xid="div3" __cid="cmYRNre"> 
-          <div component="$model/UI2/system/components/justep/list/list" class="x-list cmYRNre" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="cmYRNre"> 
-            <ul class="x-list-template hide cmYRNre" xid="listTemplateUl1" __cid="cmYRNre"> 
+          <div xid="div_tuijian" bind-click="div_tuijianClick" __cid="cmYRNre" class="cmYRNre">
+            <img src="$model/UI2/ssh/img/user_pic.png" alt="" xid="image2" __cid="cmYRNre" class="cmYRNre"/>  
+            <label xid="label1" __cid="cmYRNre" class="cmYRNre">推荐好友</label>  
+            <img src="$model/UI2/ssh/img/views.png" alt="" xid="image3" __cid="cmYRNre" class="cmYRNre"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cmYRNre" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;friend&quot;}" __cid="cmYRNre"> 
+            <ul class="x-list-template hide cmYRNre" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cmYRNre"> 
               <li xid="li1" __cid="cmYRNre" class="cmYRNre">
                 <div class="media cmYRNre" xid="media1" __cid="cmYRNre"> 
                   <div class="media-left cmYRNre" xid="mediaLeft1" __cid="cmYRNre"> 
@@ -34,12 +39,12 @@
                     </a> 
                   </div>  
                   <div class="media-body cmYRNre" xid="mediaBody1" __cid="cmYRNre"> 
-                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cmYRNre" xid="output_name" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cmYRNre"/>
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cmYRNre" xid="output_name" data-bind="component:{ref:ref(&quot;fname&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmYRNre"/>
                   </div> 
                 </div>
               </li>
             </ul> 
-          </div>
+          </div> 
         </div>  
         <div class="x-content-center x-pull-up cmYRNre" xid="div4" __cid="cmYRNre"> 
           <span class="x-pull-up-label cmYRNre" xid="span3" __cid="cmYRNre">加载更多...</span>

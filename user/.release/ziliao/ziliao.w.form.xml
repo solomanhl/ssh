@@ -41,7 +41,7 @@
         </div>
         <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
           <label class="x-label czyAVZv" xid="label5" __cid="czyAVZv">性别</label>  
-          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output5" data-bind="component:{ref:$model.ziliao.ref(&quot;sex&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit czyAVZv" xid="output5" bind-text=" $model.getSex( $model.ziliao.val(&quot;sex&quot;))" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="czyAVZv"/>
         </div>
         <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 czyAVZv" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="czyAVZv"> 
           <label class="x-label czyAVZv" xid="label6" __cid="czyAVZv">个性签名</label>  
