@@ -32,7 +32,7 @@
   <div xid="div_head"><div component="$UI/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified" tabbed="true" xid="buttonGroup_head"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="通告" xid="button1">
    <i xid="i2"></i>
    <span xid="span3">通告</span></a>
-  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="最新动态" xid="button2">
+  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="最新动态" xid="button2" onClick="button2Click">
    <i xid="i3"></i>
    <span xid="span4">最新动态</span></a>
   <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="相册" xid="button3" onClick="button3Click">
@@ -45,7 +45,7 @@
   <div xid="div_new"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="发新帖" xid="button_new" onClick="button_newClick">
    <i xid="i6"></i>
    <span xid="span7">发新帖</span></a></div><div xid="div_top4"><div component="$UI/system/components/justep/windowContainer/windowContainer" class="x-window-container" xid="windowContainer_topnews" src="$UI/ssh/threads/topNews.w"></div></div>
-  <div xid="div_list"><div component="$UI/system/components/justep/windowContainer/windowContainer" class="x-window-container" xid="windowContainer_threads" src="$UI/ssh/threads/threadList.w"></div></div></div>
+  <div id="div_list" xid="div_list"><div component="$UI/system/components/justep/windowContainer/windowContainer" class="x-window-container" xid="windowContainer_threads" src="$UI/ssh/threads/threadList.w"></div></div></div>
    <div class="x-content-center x-pull-up" xid="div4">
     <span class="x-pull-up-label" xid="span2">加载更多...</span></div> 
   </div></div>

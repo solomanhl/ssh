@@ -120,5 +120,12 @@ define(function(require){
 	};
 
 
+	//	点击最新动态
+	Model.prototype.button2Click = function(event){
+//		$.scrollTo('#div_list',500);
+		$('window').animate({scrollTop: '#div_list'}, 500);
+	};
+
+
 	return Model;
 });
