@@ -216,5 +216,5 @@ pip-log.txt
 .mr.developer.cfg
 
 #Wex5
-./cache
-./release
+.cache/
+.release/
