@@ -9,6 +9,9 @@ define(function(require) {
 		var shell = new ShellImpl(this, {
 			"contentsXid" : "pages",
 			pageMappings : {
+				"admin_login" : {
+					url : require.toUrl('./admin/login.w')	
+				},
 				"main" : {
 					url : require.toUrl('./main.w')	
 				},
@@ -40,9 +43,14 @@ define(function(require) {
 //			});
 //		}
 	
-
-		justep.Shell.showPage("main");
-		
+//		debugger;
+//		alert(justep.Browser.deviceType + justep.Browser.isMobile + justep.Browser.isX5App);
+		if (justep.Browser.isPC){
+			justep.Shell.showPage("admin_login");
+		}else{
+			justep.Shell.showPage("main");
+		}
+				
 	};
 
 
