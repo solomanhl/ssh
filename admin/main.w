@@ -4,7 +4,7 @@
   <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="data_fenlei" idColumn="id"><column name="id" type="Integer" xid="xid1"></column>
   <column label="名称" name="name" type="String" xid="xid2"></column>
   <column label="指向" name="link" type="String" xid="xid3"></column>
-  <data xid="default1">[{&quot;id&quot;:1,&quot;name&quot;:&quot;后台首页&quot;,&quot;link&quot;:&quot;./mainInfo&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;版块&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;主题&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;用户&quot;}]</data></div></div>  
+  <data xid="default1">[{&quot;id&quot;:1,&quot;name&quot;:&quot;后台首页&quot;,&quot;link&quot;:&quot;./mainInfo.w&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;版块管理&quot;,&quot;link&quot;:&quot;./forumManage.w&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;主题管理&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;用户管理&quot;,&quot;link&quot;:&quot;&quot;}]</data></div></div>  
   <div component="$UI/system/components/justep/panel/panel" 
     class="x-panel x-full" xid="panel1"> 
       <div class="x-panel-top" xid="top1"> 

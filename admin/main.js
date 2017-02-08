@@ -16,6 +16,7 @@ define(function(require){
 		var url = require.toUrl(row.val("link"));
 		var windowContainer1 = this.comp("windowContainer1");
 		windowContainer1.setSrc(url);
+		windowContainer1.refresh();
 	};
 
 	return Model;
