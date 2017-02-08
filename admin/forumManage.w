@@ -34,9 +34,9 @@
    <i xid="i1"></i>
    <span xid="span1">删除</span></a></td>
   </tr> </tbody> </table> </div> </div>
-  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="增加一行" xid="button_add" onClick="button_addClick">
+  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="添加版块" xid="button_add" onClick="button_addClick">
    <i xid="i2"></i>
-   <span xid="span2">增加一行</span></a>
+   <span xid="span2">添加版块</span></a>
   <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="保存" xid="button_save" onClick="button_saveClick">
    <i xid="i3"></i>
    <span xid="span3">保存</span></a></div>
