@@ -34,7 +34,7 @@
   </div>
    </div><div class="panel panel-default x-card" component="$UI/system/components/bootstrap/panel/panel" xid="panel_threads">
    <div class="panel-heading" xid="heading2">
-    <h4 class="panel-title x-scroll-view" xid="h42" bind-text='"共" + "条记录"'><![CDATA[]]>
+    <h4 class="panel-title x-scroll-view" xid="h42" bind-text='"共" +  $model.data_thread.count() + "条记录"'><![CDATA[]]>
   </h4></div> 
    <div class="panel-body" xid="body2">
   <div component="$UI/system/components/fragment/list/listTable" xid="listTable1" data="data_thread">

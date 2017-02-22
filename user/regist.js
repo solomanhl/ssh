@@ -35,6 +35,8 @@ define(function(require){
 	};
 	
 	Model.prototype.reg = function(uname, pwd1, mobile){
+		var create_date = parseInt(new Date().getTime() / 1000);
+		
 		justep.Baas.sendRequest({
 			"url" : "/ssh/user",
 			"action" : "reg",
@@ -42,7 +44,8 @@ define(function(require){
 			"params" : {
 				username : uname,
 				pwd : pwd1,
-				mobile : mobile
+				mobile : mobile,
+				create_date: create_date
 			},
 			"success" : function(data) {
 				var status = data.status;
